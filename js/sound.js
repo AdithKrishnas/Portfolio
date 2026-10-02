@@ -549,20 +549,56 @@ class SoundSystem {
   }
 
   updateUI() {
+    // 1. Header & standard sound toggle buttons
     const btns = document.querySelectorAll(".sound-toggle-btn, #kungfu-audio-toggle");
     btns.forEach(btn => {
       const titleSpan = btn.querySelector(".kungfu-audio-title-text");
       if (titleSpan && this.customMusicTitle) {
         titleSpan.textContent = this.customMusicTitle;
       }
+      const actionLabel = btn.querySelector(".kungfu-audio-action-label");
+      const statusEl = btn.querySelector(".kungfu-audio-status");
+
       if (this.soundEnabled) {
         btn.classList.add("active");
-        const statusEl = btn.querySelector(".kungfu-audio-status");
-        if (statusEl) statusEl.textContent = "ON";
+        btn.setAttribute("title", "Turn Off Background Music");
+        btn.setAttribute("aria-label", "Turn Off Background Music");
+        if (actionLabel) actionLabel.textContent = "TURN OFF MUSIC";
+        if (statusEl) {
+          statusEl.textContent = "ON";
+          statusEl.style.color = "var(--accent-gold-bright)";
+        }
       } else {
         btn.classList.remove("active");
-        const statusEl = btn.querySelector(".kungfu-audio-status");
-        if (statusEl) statusEl.textContent = "MUTED";
+        btn.setAttribute("title", "Play Background Music");
+        btn.setAttribute("aria-label", "Play Background Music");
+        if (actionLabel) actionLabel.textContent = "PLAY MUSIC";
+        if (statusEl) {
+          statusEl.textContent = "MUTED";
+          statusEl.style.color = "#94a3b8";
+        }
+      }
+    });
+
+    // 2. Dedicated Floating Turn Off / Play Music Button
+    const floatingPills = document.querySelectorAll("#floating-music-toggle, .floating-music-pill");
+    floatingPills.forEach(pill => {
+      const textEl = pill.querySelector(".music-pill-text");
+      const iconEl = pill.querySelector(".music-pill-icon");
+      if (this.soundEnabled) {
+        pill.classList.add("active");
+        pill.classList.remove("muted");
+        pill.setAttribute("title", "Turn Off Background Music");
+        pill.setAttribute("aria-label", "Turn Off Background Music");
+        if (textEl) textEl.textContent = "TURN OFF MUSIC";
+        if (iconEl) iconEl.textContent = "🔊";
+      } else {
+        pill.classList.remove("active");
+        pill.classList.add("muted");
+        pill.setAttribute("title", "Play Background Music");
+        pill.setAttribute("aria-label", "Play Background Music");
+        if (textEl) textEl.textContent = "PLAY MUSIC";
+        if (iconEl) iconEl.textContent = "🔇";
       }
     });
   }
@@ -587,8 +623,8 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", startAudioOnFirstGesture, { once: true });
   window.addEventListener("keydown", startAudioOnFirstGesture, { once: true });
 
-  // Bind all sound toggle buttons
-  const soundBtns = document.querySelectorAll(".sound-toggle-btn, #kungfu-audio-toggle");
+  // Bind all sound toggle buttons including persistent floating pill
+  const soundBtns = document.querySelectorAll(".sound-toggle-btn, #kungfu-audio-toggle, #floating-music-toggle, .floating-music-pill");
   soundBtns.forEach(btn => {
     btn.addEventListener("click", (e) => {
       e.stopPropagation();

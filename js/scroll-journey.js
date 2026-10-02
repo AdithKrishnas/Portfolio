@@ -37,17 +37,6 @@ class ScrollJourney {
       if (window.soundSystem) window.soundSystem.click();
       this.triggerZoomIntoTimeline();
     });
-
-    // Scroll trigger: when scrolling down from hero, add perspective zoom
-    window.addEventListener("scroll", () => {
-      const scrollY = window.pageYOffset;
-      if (scrollY < window.innerHeight) {
-        const factor = Math.min(1.3, 1 + scrollY * 0.0008);
-        const opacity = Math.max(0, 1 - scrollY * 0.0018);
-        this.computer.style.transform = `scale(${factor})`;
-        this.computer.style.opacity = `${opacity}`;
-      }
-    });
   }
 
   triggerZoomIntoTimeline() {
@@ -58,10 +47,8 @@ class ScrollJourney {
       }
       setTimeout(() => {
         this.computer.classList.remove("zooming");
-        this.computer.style.transform = "";
-        this.computer.style.opacity = "";
-      }, 1000);
-    }, 400);
+      }, 600);
+    }, 250);
   }
 
   // 2. Render Timeline

@@ -826,6 +826,52 @@
 /* --------------------------------------------------------------------------
    4. SELECTED WORK GALLERY & FILTERS
    -------------------------------------------------------------------------- */
+.works-section-header {
+  margin-bottom: 2.75rem;
+}
+
+.works-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #ffffff !important;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.45);
+  margin-bottom: 0.85rem;
+}
+
+.works-section-desc {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-style: normal;
+  color: #d8deeb !important;
+  line-height: 1.75;
+  max-width: 740px;
+}
+
+.gallery-search-input {
+  background: rgba(14, 18, 28, 0.9) !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.38) !important;
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.25rem;
+  color: #ffffff !important;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  transition: all 0.3s ease;
+}
+
+.gallery-search-input::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+.gallery-search-input:focus {
+  border-color: var(--accent-gold-bright) !important;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35) !important;
+  background: rgba(18, 24, 38, 0.98) !important;
+}
+
 .filter-bar-wrap {
   display: flex;
   flex-direction: column;
@@ -836,57 +882,58 @@
 .filter-categories {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
 }
 
 .filter-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-secondary);
-  background: rgba(14, 18, 27, 0.75);
-  border: 1px solid rgba(212, 175, 55, 0.22);
-  padding: 0.6rem 1.25rem;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #e5ebf5;
+  background: rgba(18, 24, 38, 0.88);
+  border: 1px solid rgba(212, 175, 55, 0.32);
+  padding: 0.65rem 1.35rem;
   border-radius: var(--radius-sm);
   transition: all 0.25s var(--ease-out-expo);
   cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .filter-btn .count-badge {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  opacity: 0.8;
-  background: rgba(212, 175, 55, 0.12);
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(212, 175, 55, 0.16);
   color: var(--accent-gold-bright);
-  padding: 0.1rem 0.45rem;
-  border-radius: 2px;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 0.12rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
   transition: all 0.25s ease;
 }
 
 .filter-btn:hover {
-  background: rgba(212, 175, 55, 0.12);
-  color: var(--text-primary);
+  background: rgba(28, 36, 56, 0.95);
+  color: #ffffff;
   border-color: var(--accent-gold-bright);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
 }
 
 .filter-btn.active {
   background: var(--grad-gold);
   color: #06070a;
-  border-color: var(--accent-gold-bright);
-  font-weight: 800;
-  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
+  border-color: #ffd700;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.45);
 }
 
 .filter-btn.active .count-badge {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.28);
   color: #06070a;
   border-color: transparent;
   opacity: 1;
@@ -2096,6 +2143,90 @@
   }
 }
 
+/* --------------------------------------------------------------------------
+   PERSISTENT FLOATING TURN OFF / PLAY MUSIC PILL
+   -------------------------------------------------------------------------- */
+.floating-music-pill {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 998;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(10, 13, 20, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
+  border-radius: var(--radius-full);
+  padding: 0.65rem 1.25rem;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(212, 175, 55, 0.22);
+  transition: all 0.3s var(--ease-out-expo);
+  touch-action: manipulation;
+}
+
+.floating-music-pill:hover {
+  transform: translateY(-2px) scale(1.03);
+  border-color: var(--accent-gold-bright);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.45);
+}
+
+.floating-music-pill.active {
+  border-color: var(--accent-gold-bright);
+  background: rgba(16, 22, 34, 0.94);
+  color: #ffffff;
+}
+
+.floating-music-pill.muted {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(14, 16, 22, 0.88);
+  color: #94a3b8;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.floating-music-pill .music-pill-equalizer {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 13px;
+}
+
+.floating-music-pill .eq-bar {
+  width: 3px;
+  height: 100%;
+  background: var(--accent-gold-bright);
+  border-radius: 1px;
+  transform-origin: bottom;
+}
+
+.floating-music-pill.active .eq-bar:nth-child(1) {
+  animation: eq-bounce 0.8s ease-in-out infinite alternate;
+}
+.floating-music-pill.active .eq-bar:nth-child(2) {
+  animation: eq-bounce 0.6s ease-in-out infinite alternate 0.2s;
+}
+.floating-music-pill.active .eq-bar:nth-child(3) {
+  animation: eq-bounce 0.9s ease-in-out infinite alternate 0.4s;
+}
+
+.floating-music-pill.muted .eq-bar {
+  height: 3px;
+  background: #64748b;
+  animation: none !important;
+}
+
+@keyframes eq-bounce {
+  0% { height: 3px; }
+  100% { height: 13px; }
+}
+
 @media (max-width: 768px) {
   .site-header {
     height: 64px;
@@ -2132,12 +2263,17 @@
 
   #kungfu-audio-toggle {
     min-width: auto !important;
-    padding: 0.4rem 0.65rem;
-    gap: 0.4rem;
+    padding: 0.45rem 0.75rem;
+    gap: 0.45rem;
   }
 
   .kungfu-audio-title-text {
     display: none !important;
+  }
+
+  .kungfu-audio-action-label {
+    font-size: 0.68rem !important;
+    letter-spacing: 0.04em !important;
   }
 
   .mobile-nav-overlay {
@@ -2172,8 +2308,8 @@
   .filter-btn {
     flex-shrink: 0;
     white-space: nowrap;
-    padding: 0.45rem 0.85rem;
-    font-size: 0.72rem;
+    padding: 0.55rem 1.05rem;
+    font-size: 0.82rem;
   }
   
   /* Masonry Grid on Mobile */
@@ -2268,6 +2404,77 @@
     text-align: center;
     gap: 0.65rem;
   }
+
+  /* Mobile & Tablet Typography Decongestion */
+  body {
+    line-height: 1.75;
+  }
+
+  p {
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-headline {
+    font-size: clamp(1.85rem, 6.8vw, 2.6rem) !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0.015em !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .hero-description {
+    font-size: 0.98rem !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0.01em;
+    margin-bottom: 1.75rem !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.75rem, 5.8vw, 2.5rem) !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0.02em !important;
+    margin-bottom: 0.85rem !important;
+  }
+
+  .section-subtitle {
+    font-size: 1.05rem !important;
+    line-height: 1.72 !important;
+    letter-spacing: 0.01em !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .about-story p {
+    font-size: 0.98rem !important;
+    line-height: 1.8 !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .about-manifesto {
+    font-size: 1.12rem !important;
+    line-height: 1.75 !important;
+    padding: 1.25rem !important;
+    margin: 1.25rem 0 !important;
+  }
+
+  .works-section-header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1.25rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .works-search-wrap {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .floating-music-pill {
+    bottom: 1.25rem;
+    left: 1rem;
+    padding: 0.55rem 0.95rem;
+    font-size: 0.74rem;
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2285,13 +2492,14 @@
   }
 
   .hero-headline {
-    font-size: clamp(1.85rem, 7.5vw, 2.4rem);
-    line-height: 1.15;
+    font-size: clamp(1.7rem, 7.5vw, 2.15rem) !important;
+    line-height: 1.28 !important;
+    letter-spacing: 0.01em !important;
   }
 
   .hero-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.94rem !important;
+    line-height: 1.72 !important;
     margin-bottom: 1.5rem;
   }
 
