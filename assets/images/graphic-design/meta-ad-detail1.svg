@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <rect width="1000" height="700" fill="#0b0d14"/>
+  <rect x="50" y="50" width="900" height="600" rx="14" fill="#111420" stroke="rgba(0,210,255,0.2)"/>
+  
+  <text x="90" y="110" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="16" font-weight="700">CREATIVE VARIANT BREAKDOWN // ₹15,000 META SPEND</text>
+
+  <!-- 3 Creative Variants Tested -->
+  <g transform="translate(90, 160)">
+    <!-- Variant A -->
+    <rect x="0" y="0" width="250" height="380" rx="8" fill="#181c2c" stroke="rgba(255,255,255,0.1)"/>
+    <text x="20" y="40" fill="#ffffff" font-family="'Syne', sans-serif" font-size="18" font-weight="bold">VARIANT A: UGC HOOK</text>
+    <text x="20" y="70" fill="#8892b0" font-family="'Space Grotesk', monospace" font-size="12">Spend: ₹5,000</text>
+    <text x="20" y="95" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="14" font-weight="bold">ROAS: 5.1x (Winner)</text>
+    <text x="20" y="130" fill="#9ea3b5" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">Raw vertical video with dynamic kinetic caption overlays.</text>
+    <rect x="20" y="320" width="210" height="32" rx="4" fill="#ccff00"/>
+    <text x="125" y="341" text-anchor="middle" fill="#000" font-family="'Space Grotesk', monospace" font-weight="bold" font-size="11">SCALE CANDIDATE</text>
+
+    <!-- Variant B -->
+    <rect x="285" y="0" width="250" height="380" rx="8" fill="#181c2c" stroke="rgba(255,255,255,0.1)"/>
+    <text x="305" y="40" fill="#ffffff" font-family="'Syne', sans-serif" font-size="18" font-weight="bold">VARIANT B: 3D MOTION</text>
+    <text x="305" y="70" fill="#8892b0" font-family="'Space Grotesk', monospace" font-size="12">Spend: ₹6,000</text>
+    <text x="305" y="95" fill="#00d2ff" font-family="'Space Grotesk', monospace" font-size="14" font-weight="bold">ROAS: 4.6x</text>
+    <text x="305" y="130" fill="#9ea3b5" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">High-fidelity 3D product simulation with spectral lighting.</text>
+
+    <!-- Variant C -->
+    <rect x="570" y="0" width="250" height="380" rx="8" fill="#181c2c" stroke="rgba(255,255,255,0.1)"/>
+    <text x="590" y="40" fill="#ffffff" font-family="'Syne', sans-serif" font-size="18" font-weight="bold">VARIANT C: CAROUSEL</text>
+    <text x="590" y="70" fill="#8892b0" font-family="'Space Grotesk', monospace" font-size="12">Spend: ₹4,000</text>
+    <text x="590" y="95" fill="#ffffff" font-family="'Space Grotesk', monospace" font-size="14" font-weight="bold">ROAS: 4.4x</text>
+    <text x="590" y="130" fill="#9ea3b5" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">Editorial slide sequence with social proof testimonials.</text>
+  </g>
+
+  <text x="90" y="600" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="13">TOTAL AD SPEND: ₹15,000.00 • AGGREGATE REVENUE: ₹72,300.00 • BLENDED ROAS: 4.82x</text>
+</svg>

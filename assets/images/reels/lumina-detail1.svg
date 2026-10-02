@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <rect width="1000" height="700" fill="#040711"/>
+  <ellipse cx="500" cy="350" rx="300" ry="140" fill="none" stroke="#00f0ff" stroke-width="2"/>
+  <circle cx="500" cy="350" r="120" fill="none" stroke="#ccff00" stroke-width="1.5" stroke-dasharray="8 6"/>
+  <text x="50" y="80" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="14" letter-spacing="3">FLUID CAUSTICS DISPERSION RIG</text>
+  <text x="50" y="650" fill="#ffffff" font-family="'Space Grotesk', monospace" font-size="14">BLENDER CYCLES GPU OPTICAL REFRACTION</text>
+</svg>

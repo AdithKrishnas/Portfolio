@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bio-bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a1d18"/>
+      <stop offset="60%" stop-color="#040b08"/>
+      <stop offset="100%" stop-color="#010403"/>
+    </radialGradient>
+    <linearGradient id="bio-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ccff00"/>
+      <stop offset="50%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1280" fill="url(#bio-bg)"/>
+
+  <!-- Organic Botanical Neural Curves -->
+  <g transform="translate(360, 640)">
+    <path d="M0,380 C-180,200 -220,-80 -80,-240 C-20,-300 20,-300 80,-240 C220,-80 180,200 0,380 Z" fill="none" stroke="url(#bio-grad)" stroke-width="3"/>
+    
+    <path d="M0,320 C-120,160 -150,-40 -50,-180 C0,-220 0,-220 50,-180 C150,-40 120,160 0,320 Z" fill="none" stroke="#00f0ff" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Synaptic particles -->
+    <circle cx="0" cy="-280" r="14" fill="#ccff00"/>
+    <circle cx="-120" cy="-60" r="8" fill="#00f0ff"/>
+    <circle cx="120" cy="-60" r="8" fill="#00f0ff"/>
+    <circle cx="-60" cy="180" r="10" fill="#10b981"/>
+    <circle cx="60" cy="180" r="10" fill="#10b981"/>
+  </g>
+
+  <!-- Title & Meta -->
+  <text x="60" y="100" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="14" letter-spacing="3">VENICE BIENNALE // DIGITAL PAVILION</text>
+  <text x="60" y="1080" fill="#ffffff" font-family="'Syne', sans-serif" font-size="64" font-weight="900">BIOMORPH</text>
+  <text x="60" y="1120" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="16">SYNTHETIC FLORA EVOLUTION</text>
+  <text x="60" y="1150" fill="#8892b0" font-family="'Plus Jakarta Sans', sans-serif" font-size="14">Sound-reactive neural botany</text>
+
+  <!-- Play icon -->
+  <circle cx="360" cy="640" r="40" fill="rgba(204,255,0,0.9)"/>
+  <polygon points="352,625 376,640 352,655" fill="#040b08"/>
+</svg>

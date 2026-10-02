@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="pod-bg" cx="50%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#1c111d"/>
+      <stop offset="60%" stop-color="#0e0811"/>
+      <stop offset="100%" stop-color="#050306"/>
+    </radialGradient>
+    <linearGradient id="pod-fashion-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3366"/>
+      <stop offset="50%" stop-color="#ff758c"/>
+      <stop offset="100%" stop-color="#ff7eb3"/>
+    </linearGradient>
+    <linearGradient id="pod-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#ff8800"/>
+    </linearGradient>
+    <filter id="p-glow">
+      <feGaussianBlur stdDeviation="15" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="800" fill="url(#pod-bg)"/>
+
+  <!-- Browser Window Chrome -->
+  <rect x="70" y="60" width="1060" height="680" rx="16" fill="#0c080e" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <rect x="70" y="60" width="1060" height="50" rx="16" fill="#140e18"/>
+  <circle cx="105" cy="85" r="6" fill="#ff5f56"/>
+  <circle cx="125" cy="85" r="6" fill="#ffbd2e"/>
+  <circle cx="145" cy="85" r="6" fill="#27c93f"/>
+  <rect x="360" y="72" width="480" height="26" rx="13" fill="#221628"/>
+  <text x="600" y="89" text-anchor="middle" fill="#f3d9fa" font-family="'Space Grotesk', monospace" font-size="12">https://podiyo.in — Curated Streetwear &amp; Fashion Apparel</text>
+
+  <!-- Website Content: Fashion Storefront -->
+  <g transform="translate(110, 135)">
+    <!-- Top Nav of Fashion Site -->
+    <text x="0" y="35" fill="url(#pod-fashion-grad)" font-family="'Syne', sans-serif" font-size="34" font-weight="900" letter-spacing="1">PODIYO</text>
+    <text x="145" y="32" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="11" font-weight="700">● LIVE FASHION BRAND</text>
+    
+    <!-- Nav Links -->
+    <g transform="translate(420, 25)" font-family="'Space Grotesk', monospace" font-size="12" fill="#c4b5fd" letter-spacing="1">
+      <text x="0" y="0">NEW ARRIVALS</text>
+      <text x="130" y="0">LOOKBOOK</text>
+      <text x="235" y="0">STREETWEAR</text>
+      <text x="350" y="0">COLLECTIONS</text>
+    </g>
+
+    <!-- Cart Badge -->
+    <rect x="910" y="10" width="110" height="34" rx="17" fill="rgba(255,51,102,0.15)" stroke="#ff3366" stroke-width="1"/>
+    <text x="965" y="32" text-anchor="middle" fill="#ffffff" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">BAG (3) ↗</text>
+
+    <!-- Hero Banner: Fashion Capsule -->
+    <g transform="translate(0, 60)">
+      <rect x="0" y="0" width="1020" height="150" rx="12" fill="#1b1020" stroke="rgba(255,51,102,0.2)"/>
+      <text x="35" y="48" fill="#ff758c" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold" letter-spacing="3">AUTUMN / WINTER CAPSULE DROP</text>
+      <text x="35" y="92" fill="#ffffff" font-family="'Syne', sans-serif" font-size="36" font-weight="900" letter-spacing="-1">OVERSIZED GRAPHIC TEES &amp; ESSENTIALS</text>
+      <text x="35" y="125" fill="#a79db0" font-family="'Plus Jakarta Sans', sans-serif" font-size="14">Engineered by AdithKrishna S. • Heavyweight 280 GSM French Terry Cotton</text>
+      
+      <rect x="830" y="45" width="150" height="48" rx="24" fill="url(#pod-fashion-grad)"/>
+      <text x="905" y="74" text-anchor="middle" fill="#000000" font-family="'Syne', sans-serif" font-size="14" font-weight="900">SHOP DROP ➔</text>
+    </g>
+
+    <!-- Product Grid: 3 Apparel Cards -->
+    <g transform="translate(0, 235)">
+      <!-- Product Card 1: Acid Wash Tee -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="315" height="310" rx="12" fill="#160e1b" stroke="rgba(255,255,255,0.08)"/>
+        <!-- Product Image Placeholder: Tee Silhouette -->
+        <rect x="15" y="15" width="285" height="180" rx="8" fill="#201427"/>
+        <path d="M120,60 L140,40 L175,40 L195,60 L220,70 L205,100 L185,90 L185,160 L130,160 L130,90 L110,100 L95,70 Z" fill="#2d1c37" stroke="#ff3366" stroke-width="2"/>
+        <text x="157" y="115" text-anchor="middle" fill="#ffffff" font-family="'Syne', sans-serif" font-size="13" font-weight="bold">PODIYO</text>
+        
+        <rect x="25" y="25" width="60" height="22" rx="4" fill="#ff3366"/>
+        <text x="55" y="40" text-anchor="middle" fill="#ffffff" font-family="'Space Grotesk', monospace" font-size="10" font-weight="bold">NEW</text>
+        
+        <text x="20" y="222" fill="#ffffff" font-family="'Syne', sans-serif" font-size="16" font-weight="bold">Acid-Wash Oversized Tee</text>
+        <text x="20" y="244" fill="#a79db0" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Vintage Charcoal • 280 GSM</text>
+        <text x="20" y="278" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="16" font-weight="bold">₹1,499</text>
+        <text x="90" y="278" fill="#665970" font-family="'Space Grotesk', monospace" font-size="13" text-decoration="line-through">₹2,299</text>
+        <rect x="200" y="258" width="95" height="32" rx="16" fill="rgba(204,255,0,0.12)" stroke="#ccff00" stroke-width="1"/>
+        <text x="247" y="278" text-anchor="middle" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="11" font-weight="bold">ADD +</text>
+      </g>
+
+      <!-- Product Card 2: Streetwear Cargo Pant -->
+      <g transform="translate(352, 0)">
+        <rect x="0" y="0" width="315" height="310" rx="12" fill="#160e1b" stroke="rgba(255,255,255,0.08)"/>
+        <!-- Product Image Placeholder: Cargo Silhouette -->
+        <rect x="15" y="15" width="285" height="180" rx="8" fill="#201427"/>
+        <path d="M125,50 L190,50 L185,160 L160,160 L157,90 L155,90 L152,160 L127,160 Z" fill="#2d1c37" stroke="#00f0ff" stroke-width="2"/>
+        
+        <rect x="25" y="25" width="90" height="22" rx="4" fill="#00f0ff"/>
+        <text x="70" y="40" text-anchor="middle" fill="#000000" font-family="'Space Grotesk', monospace" font-size="10" font-weight="bold">BESTSELLER</text>
+        
+        <text x="20" y="222" fill="#ffffff" font-family="'Syne', sans-serif" font-size="16" font-weight="bold">Tactical Utility Cargo</text>
+        <text x="20" y="244" fill="#a79db0" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Onyx Black • Water-Repellent</text>
+        <text x="20" y="278" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="16" font-weight="bold">₹2,899</text>
+        <text x="90" y="278" fill="#665970" font-family="'Space Grotesk', monospace" font-size="13" text-decoration="line-through">₹3,999</text>
+        <rect x="200" y="258" width="95" height="32" rx="16" fill="rgba(204,255,0,0.12)" stroke="#ccff00" stroke-width="1"/>
+        <text x="247" y="278" text-anchor="middle" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="11" font-weight="bold">ADD +</text>
+      </g>
+
+      <!-- Product Card 3: Heavyweight Hoodie -->
+      <g transform="translate(705, 0)">
+        <rect x="0" y="0" width="315" height="310" rx="12" fill="#160e1b" stroke="rgba(255,255,255,0.08)"/>
+        <!-- Product Image Placeholder: Hoodie Silhouette -->
+        <rect x="15" y="15" width="285" height="180" rx="8" fill="#201427"/>
+        <path d="M125,70 C125,45 190,45 190,70 L215,85 L200,120 L180,105 L180,160 L135,160 L135,105 L115,120 L100,85 Z" fill="#2d1c37" stroke="#ffd700" stroke-width="2"/>
+        
+        <rect x="25" y="25" width="95" height="22" rx="4" fill="url(#pod-gold)"/>
+        <text x="72" y="40" text-anchor="middle" fill="#000000" font-family="'Space Grotesk', monospace" font-size="10" font-weight="bold">LIMITED DROP</text>
+        
+        <text x="20" y="222" fill="#ffffff" font-family="'Syne', sans-serif" font-size="16" font-weight="bold">Monochrome Boxy Hoodie</text>
+        <text x="20" y="244" fill="#a79db0" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">400 GSM Ultra-Fleece • Grey</text>
+        <text x="20" y="278" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="16" font-weight="bold">₹3,299</text>
+        <text x="90" y="278" fill="#665970" font-family="'Space Grotesk', monospace" font-size="13" text-decoration="line-through">₹4,499</text>
+        <rect x="200" y="258" width="95" height="32" rx="16" fill="rgba(204,255,0,0.12)" stroke="#ccff00" stroke-width="1"/>
+        <text x="247" y="278" text-anchor="middle" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="11" font-weight="bold">ADD +</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <rect width="1000" height="700" fill="#11071c"/>
+  <circle cx="500" cy="350" r="180" fill="none" stroke="#00f0ff" stroke-width="2"/>
+  <polygon points="500,200 620,450 380,450" fill="none" stroke="#ff007f" stroke-width="2"/>
+  <text x="50" y="80" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="14">LATENT SPACE INTERPOLATION</text>
+  <text x="50" y="650" fill="#8890a6" font-family="'Space Grotesk', monospace" font-size="14">SEED 894210984 • PROMPT WEIGHTING: 1.15</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <rect width="1000" height="700" fill="#0d0e12"/>
+  <rect x="150" y="100" width="700" height="500" rx="16" fill="#151720" stroke="rgba(255,255,255,0.1)"/>
+  <text x="200" y="180" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="16">PACKAGING SPECIFICATION</text>
+  <text x="200" y="240" fill="#ffffff" font-family="'Syne', sans-serif" font-size="36" font-weight="900">MATTE BLACK HEMP BOX</text>
+  <text x="200" y="300" fill="#8890a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="15">Laser-etched QR authentication chip + debossed bio-polymer tray</text>
+  <rect x="200" y="360" width="220" height="160" fill="#08090d" stroke="#00f0ff" stroke-width="1.5"/>
+  <text x="310" y="445" text-anchor="middle" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="14">HARDWARE CORE</text>
+</svg>

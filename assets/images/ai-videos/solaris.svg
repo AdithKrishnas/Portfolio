@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="sol-bg" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#2a1b40"/>
+      <stop offset="50%" stop-color="#0f091c"/>
+      <stop offset="100%" stop-color="#040208"/>
+    </radialGradient>
+    <linearGradient id="sol-aurora" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="30%" stop-color="#ccff00"/>
+      <stop offset="70%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#7928ca"/>
+    </linearGradient>
+    <filter id="sol-glow">
+      <feGaussianBlur stdDeviation="30" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#sol-bg)"/>
+
+  <!-- Anamorphic Lens Flare Line -->
+  <line x1="0" y1="360" x2="1200" y2="360" stroke="#00f0ff" stroke-width="2" opacity="0.6" filter="url(#sol-glow)"/>
+  <ellipse cx="600" cy="360" rx="350" ry="12" fill="#00f0ff" opacity="0.3" filter="url(#sol-glow)"/>
+
+  <!-- Surreal Giant Celestial Structure / Monolith -->
+  <g transform="translate(600, 360)">
+    <!-- Mineral Crystal Growth Cluster -->
+    <polygon points="0,-220 80,-80 40,160 -40,160 -80,-80" fill="url(#sol-aurora)" opacity="0.85" filter="url(#sol-glow)"/>
+    <polygon points="-120,-140 -50,-40 -80,120 -150,80" fill="#7928ca" opacity="0.6"/>
+    <polygon points="120,-140 150,80 80,120 50,-40" fill="#00f0ff" opacity="0.6"/>
+    
+    <circle cx="0" cy="-60" r="90" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="12 6" opacity="0.8"/>
+  </g>
+
+  <!-- Cinema HUD -->
+  <text x="80" y="100" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="14" letter-spacing="4">DIFFUSION SYNTHESIS // COMFYUI PIPELINE</text>
+  <text x="80" y="160" fill="#ffffff" font-family="'Syne', sans-serif" font-size="56" font-weight="900">SOLARIS</text>
+  <text x="80" y="200" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="16">AI EXPERIMENTAL SHORT FILM (01:15 • 4K 60FPS)</text>
+
+  <!-- Play Badge -->
+  <circle cx="600" cy="360" r="44" fill="rgba(204,255,0,0.9)" filter="url(#sol-glow)"/>
+  <polygon points="592,345 616,360 592,375" fill="#040208"/>
+
+  <text x="1120" y="100" text-anchor="end" fill="#ffffff" font-family="'Space Grotesk', monospace" font-size="13">AWARD WINNER: AI FILM FESTIVAL</text>
+</svg>

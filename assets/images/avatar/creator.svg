@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="creator-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#191a26"/>
+      <stop offset="60%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </radialGradient>
+    <linearGradient id="creator-rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ccff00"/>
+      <stop offset="50%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#ff4365"/>
+    </linearGradient>
+    <filter id="c-glow">
+      <feGaussianBlur stdDeviation="20" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#creator-bg)"/>
+
+  <!-- Halo Studio Rim Light behind head -->
+  <circle cx="400" cy="400" r="240" fill="none" stroke="url(#creator-rim)" stroke-width="2" opacity="0.8" filter="url(#c-glow)"/>
+  <ellipse cx="400" cy="400" rx="200" ry="260" fill="#13141f" opacity="0.6"/>
+
+  <!-- Stylized Studio Portrait Silhouette -->
+  <!-- Shoulders & Torso -->
+  <path d="M180,950 C200,760 280,680 400,680 C520,680 600,760 620,950 Z" fill="#0e0f16" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+
+  <!-- Head & Neck -->
+  <rect x="360" y="520" width="80" height="180" rx="20" fill="#161822"/>
+  <ellipse cx="400" cy="420" rx="110" ry="145" fill="#181a26" stroke="url(#creator-rim)" stroke-width="2"/>
+  
+  <!-- Modern Geometric Sunglasses / Studio Visor -->
+  <rect x="315" y="390" width="170" height="42" rx="10" fill="#070709" stroke="#ccff00" stroke-width="2" filter="url(#c-glow)"/>
+  <line x1="330" y1="411" x2="470" y2="411" stroke="#00f0ff" stroke-width="2"/>
+
+  <!-- Audio Headset / Studio Cans -->
+  <rect x="270" y="370" width="30" height="100" rx="12" fill="#0d0e14" stroke="#ffffff" stroke-width="1.5"/>
+  <rect x="500" y="370" width="30" height="100" rx="12" fill="#0d0e14" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M285,370 C285,250 515,250 515,370" fill="none" stroke="#ffffff" stroke-width="4"/>
+
+  <!-- Studio Viewfinder Crosshairs Overlay -->
+  <g stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="100" y1="500" x2="700" y2="500"/>
+    <line x1="400" y1="150" x2="400" y2="850"/>
+  </g>
+
+  <!-- Technical Overlay Typography -->
+  <text x="60" y="80" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="14" letter-spacing="4">CREATIVE PORTRAIT // 2026</text>
+  <text x="60" y="110" fill="#8890a6" font-family="'Space Grotesk', monospace" font-size="11">MULTIDISCIPLINARY ART DIRECTOR</text>
+  <text x="740" y="80" text-anchor="end" fill="#ffffff" font-family="'Space Grotesk', monospace" font-size="14">ISO 100 • 50MM F/1.2</text>
+</svg>

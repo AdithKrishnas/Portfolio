@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="davinci-bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#141824"/>
+      <stop offset="100%" stop-color="#08090f"/>
+    </radialGradient>
+    <filter id="dv-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#davinci-bg)" stroke="#00d2ff" stroke-width="3"/>
+  <rect x="8" y="8" width="184" height="184" rx="38" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <!-- DaVinci Resolve 3-Petal Aperture -->
+  <g transform="translate(100, 100) scale(1.15)" filter="url(#dv-glow)">
+    <!-- Red petal -->
+    <path d="M0,-42 C18,-42 35,-26 26,-6 C18,8 2,12 0,0 Z" fill="#ff3366"/>
+    <!-- Cyan petal -->
+    <path d="M0,-42 C18,-42 35,-26 26,-6 C18,8 2,12 0,0 Z" fill="#00d2ff" transform="rotate(120)"/>
+    <!-- Yellow/Gold petal -->
+    <path d="M0,-42 C18,-42 35,-26 26,-6 C18,8 2,12 0,0 Z" fill="#ffd13b" transform="rotate(240)"/>
+    <!-- Inner aperture circle -->
+    <circle cx="0" cy="0" r="14" fill="#08090f" stroke="#00d2ff" stroke-width="2"/>
+  </g>
+</svg>

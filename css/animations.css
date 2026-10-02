@@ -1,0 +1,109 @@
+/* ==========================================================================
+   ANIMATIONS & MOTION SYSTEM
+   ========================================================================== */
+
+/* Fade In Up Reveal */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays */
+[data-delay="100"] { transition-delay: 0.1s; }
+[data-delay="200"] { transition-delay: 0.2s; }
+[data-delay="300"] { transition-delay: 0.3s; }
+[data-delay="400"] { transition-delay: 0.4s; }
+[data-delay="500"] { transition-delay: 0.5s; }
+
+/* Glowing Border Pulse */
+@keyframes border-shimmer {
+  0% { border-color: rgba(255, 255, 255, 0.08); }
+  50% { border-color: rgba(204, 255, 0, 0.5); }
+  100% { border-color: rgba(255, 255, 255, 0.08); }
+}
+
+.border-shimmer-active {
+  animation: border-shimmer 3s infinite ease-in-out;
+}
+
+/* Floating Ambient Orbs */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(4deg);
+  }
+}
+
+.float-element {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+/* Button Ripple & Hover Glow */
+.magnetic-target {
+  transition: transform 0.25s cubic-bezier(0.2, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Card 3D Tilt perspective wrapper */
+.tilt-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Scanline / Futuristic Grid Overlay in Canvas */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.scanline-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-lime), transparent);
+  opacity: 0.4;
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+}
+
+/* Modal Open Scale */
+@keyframes modal-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Reduced Motion Safety */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .marquee-track {
+    animation: none !important;
+  }
+  .float-element {
+    animation: none !important;
+  }
+  .sound-active .sound-bar {
+    animation: none !important;
+  }
+}

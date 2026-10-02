@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="kinetic-bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#12080a"/>
+      <stop offset="60%" stop-color="#080405"/>
+      <stop offset="100%" stop-color="#030202"/>
+    </radialGradient>
+    <linearGradient id="crimson-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c81d25"/>
+      <stop offset="60%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+    <filter id="animus-glow-k">
+      <feGaussianBlur stdDeviation="16" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#kinetic-bg)"/>
+  
+  <!-- Subtle Geometry -->
+  <g opacity="0.12" stroke="#c81d25" stroke-width="1">
+    <circle cx="600" cy="400" r="320" fill="none"/>
+    <circle cx="600" cy="400" r="180" fill="none"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="800"/>
+  </g>
+
+  <!-- Corner Brackets -->
+  <path d="M40 80 L40 40 L80 40" fill="none" stroke="#d4af37" stroke-width="2"/>
+  <path d="M1160 80 L1160 40 L1120 40" fill="none" stroke="#d4af37" stroke-width="2"/>
+  <path d="M40 720 L40 760 L80 760" fill="none" stroke="#d4af37" stroke-width="2"/>
+  <path d="M1160 720 L1160 760 L1120 760" fill="none" stroke="#d4af37" stroke-width="2"/>
+
+  <!-- Energy Wave -->
+  <g filter="url(#animus-glow-k)">
+    <path d="M150,680 C400,150 780,720 1080,220" fill="none" stroke="url(#crimson-gold)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M220,720 C460,200 720,760 1020,300" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Text -->
+  <text x="80" y="110" fill="#d4af37" font-family="'Cinzel', Georgia, serif" font-size="14" letter-spacing="4">◈ LIFESTYLE &amp; APPAREL REEL</text>
+  <text x="80" y="180" fill="#f6f1e3" font-family="'Cinzel', Georgia, serif" font-size="52" font-weight="900" letter-spacing="1">KINETIC PULSE</text>
+  <text x="80" y="220" fill="#c81d25" font-family="monospace" font-size="14" letter-spacing="3">FINAL CUT PRO // 9:16 VERTICAL HOOK</text>
+
+  <!-- Duration Badge -->
+  <rect x="1020" y="70" width="100" height="34" rx="4" fill="rgba(6,7,10,0.8)" stroke="#d4af37"/>
+  <text x="1070" y="93" text-anchor="middle" fill="#d4af37" font-family="monospace" font-size="13" font-weight="bold">00:30</text>
+
+  <!-- Play Glyph -->
+  <circle cx="600" cy="400" r="50" fill="rgba(200,29,37,0.2)" stroke="#c81d25" stroke-width="2" filter="url(#animus-glow-k)"/>
+  <polygon points="592,382 616,400 592,418" fill="#d4af37"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="wix-bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#21180a"/>
+      <stop offset="100%" stop-color="#0d0903"/>
+    </radialGradient>
+    <filter id="wix-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#wix-bg)" stroke="#faad14" stroke-width="3"/>
+  <rect x="8" y="8" width="184" height="184" rx="38" fill="none" stroke="rgba(250,173,20,0.3)" stroke-width="1.5"/>
+  <text x="100" y="128" text-anchor="middle" fill="#ffffff" font-family="'Syne', sans-serif" font-weight="900" font-size="64" letter-spacing="-2" filter="url(#wix-glow)">Wi<tspan fill="#faad14">X</tspan></text>
+</svg>

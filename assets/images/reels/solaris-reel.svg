@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="solaris-bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#141108"/>
+      <stop offset="60%" stop-color="#080705"/>
+      <stop offset="100%" stop-color="#030302"/>
+    </radialGradient>
+    <linearGradient id="gold-streak" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#f5d77f"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+    <filter id="animus-glow">
+      <feGaussianBlur stdDeviation="18" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#solaris-bg)"/>
+  
+  <!-- Subtle Animus Grid -->
+  <g opacity="0.15" stroke="#d4af37" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="800"/>
+    <line x1="300" y1="0" x2="300" y2="800"/>
+    <line x1="600" y1="0" x2="600" y2="800"/>
+    <line x1="900" y1="0" x2="900" y2="800"/>
+    <line x1="1100" y1="0" x2="1100" y2="800"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+
+  <!-- Corner Brackets -->
+  <path d="M40 80 L40 40 L80 40" fill="none" stroke="#d4af37" stroke-width="2"/>
+  <path d="M1160 80 L1160 40 L1120 40" fill="none" stroke="#d4af37" stroke-width="2"/>
+  <path d="M40 720 L40 760 L80 760" fill="none" stroke="#d4af37" stroke-width="2"/>
+  <path d="M1160 720 L1160 760 L1120 760" fill="none" stroke="#d4af37" stroke-width="2"/>
+
+  <!-- Celestial Arc & Wave -->
+  <g filter="url(#animus-glow)">
+    <circle cx="600" cy="400" r="220" fill="none" stroke="rgba(212,175,55,0.25)" stroke-width="2" stroke-dasharray="8 6"/>
+    <circle cx="600" cy="400" r="140" fill="none" stroke="rgba(0,240,255,0.4)" stroke-width="1.5"/>
+    <path d="M100,550 C380,200 820,620 1100,280" fill="none" stroke="url(#gold-streak)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Telemetry Badges -->
+  <text x="80" y="110" fill="#d4af37" font-family="'Cinzel', Georgia, serif" font-size="14" letter-spacing="4">◈ COMMERCIAL SEQUENCE // VARIETY AD</text>
+  <text x="80" y="180" fill="#f6f1e3" font-family="'Cinzel', Georgia, serif" font-size="54" font-weight="900" letter-spacing="1">SOLARIS VARIETY</text>
+  <text x="80" y="220" fill="#00f0ff" font-family="monospace" font-size="14" letter-spacing="3">4K TIMELINE // PREMIERE PRO &amp; AFTER EFFECTS</text>
+
+  <!-- Duration Badge -->
+  <rect x="1020" y="70" width="100" height="34" rx="4" fill="rgba(6,7,10,0.8)" stroke="#d4af37"/>
+  <text x="1070" y="93" text-anchor="middle" fill="#d4af37" font-family="monospace" font-size="13" font-weight="bold">00:30</text>
+
+  <!-- Play Glyph -->
+  <circle cx="600" cy="400" r="50" fill="rgba(212,175,55,0.2)" stroke="#d4af37" stroke-width="2" filter="url(#animus-glow)"/>
+  <polygon points="592,382 616,400 592,418" fill="#d4af37"/>
+</svg>

@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Screen Void -->
+    <radialGradient id="ac-screen-void" cx="50%" cy="40%" r="90%">
+      <stop offset="0%" stop-color="#0f1320"/>
+      <stop offset="45%" stop-color="#070910"/>
+      <stop offset="100%" stop-color="#040508"/>
+    </radialGradient>
+
+    <!-- Antique Gold Shimmer -->
+    <linearGradient id="ac-gold-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d77f"/>
+      <stop offset="35%" stop-color="#d4af37"/>
+      <stop offset="70%" stop-color="#9e7d23"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+
+    <!-- Animus Holographic Pulse Line -->
+    <linearGradient id="ac-animus-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.2"/>
+      <stop offset="30%" stop-color="#00f0ff"/>
+      <stop offset="70%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#c81d25"/>
+    </linearGradient>
+
+    <!-- Screen Glow Filter -->
+    <filter id="ac-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="ac-soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="18" stdDeviation="25" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Animus Light Reflection Behind Terminal -->
+  <ellipse cx="600" cy="370" rx="480" ry="270" fill="#d4af37" opacity="0.08" filter="url(#ac-glow)"/>
+  <ellipse cx="600" cy="380" rx="420" ry="240" fill="#00f0ff" opacity="0.06" filter="url(#ac-glow)"/>
+
+  <!-- ======================================================================
+       1. CHISELED OBSIDIAN & BRASS TERMINAL PEDESTAL / STAND
+       ====================================================================== -->
+  <g transform="translate(600, 675)">
+    <!-- Base Plate Shadow -->
+    <ellipse cx="0" cy="46" rx="210" ry="28" fill="#020305" opacity="0.9"/>
+    
+    <!-- Base Plate Outer Tier (Weathered Obsidian Stone) -->
+    <ellipse cx="0" cy="42" rx="195" ry="24" fill="#0d1017" stroke="url(#ac-gold-metal)" stroke-width="1.5"/>
+    
+    <!-- Gold Inlaid Filigree Ring -->
+    <ellipse cx="0" cy="40" rx="180" ry="20" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="6,4" opacity="0.7"/>
+    <ellipse cx="0" cy="38" rx="165" ry="17" fill="#06080d"/>
+
+    <!-- Inlaid Center Brotherhood Diamond -->
+    <path d="M0,32 L8,38 L0,44 L-8,38 Z" fill="#d4af37" opacity="0.9"/>
+    
+    <!-- Heavy Forged Armature with Brass Accents -->
+    <path d="M-34,-105 L34,-105 L24,36 L-24,36 Z" fill="#11151f" stroke="#1f2536" stroke-width="1.5"/>
+    <path d="M-22,-105 L0,-105 L-6,36 L-18,36 Z" fill="#1b2130"/>
+    
+    <!-- Brass Cable Conduit Trim -->
+    <line x1="0" y1="-105" x2="0" y2="35" stroke="#d4af37" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="0" cy="-35" r="4" fill="#d4af37"/>
+  </g>
+
+  <!-- ======================================================================
+       2. MAIN ANIMUS CHASSIS & GOLD-ETCHED BEZEL
+       ====================================================================== -->
+  <g transform="translate(600, 355)" filter="url(#ac-soft-shadow)">
+    <!-- Outer Obsidian Frame -->
+    <rect x="-495" y="-315" width="990" height="590" rx="16" fill="#07090f" stroke="#1c2130" stroke-width="2"/>
+    
+    <!-- Gold Hairline Frame Inlay -->
+    <rect x="-490" y="-310" width="980" height="580" rx="12" fill="#0b0e16" stroke="url(#ac-gold-metal)" stroke-width="1.2"/>
+    
+    <!-- Ancient Brotherhood Corner Brackets (Etched Gold) -->
+    <!-- Top-Left -->
+    <path d="M-482,-285 L-482,-302 L-465,-302" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+    <!-- Top-Right -->
+    <path d="M482,-285 L482,-302 L465,-302" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+    <!-- Bottom-Left -->
+    <path d="M-482,245 L-482,262 L-465,262" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+    <!-- Bottom-Right -->
+    <path d="M482,245 L482,262 L465,262" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+
+    <!-- Inner Screen Display Void -->
+    <rect x="-472" y="-292" width="944" height="534" rx="8" fill="url(#ac-screen-void)"/>
+
+    <!-- Holographic Astrolabe Celestial Rings (Watermark) -->
+    <g opacity="0.08" stroke="#d4af37" stroke-width="1" fill="none">
+      <circle cx="0" cy="-30" r="210"/>
+      <circle cx="0" cy="-30" r="160" stroke-dasharray="4,6"/>
+      <circle cx="0" cy="-30" r="110"/>
+      <circle cx="0" cy="-30" r="60" stroke-dasharray="2,4"/>
+      <line x1="-240" y1="-30" x2="240" y2="-30" stroke-dasharray="8,8"/>
+      <line x1="0" y1="-270" x2="0" y2="210" stroke-dasharray="8,8"/>
+    </g>
+
+    <!-- ==================================================================
+         3. SCREEN CONTENT: ANIMUS COMMAND INTERFACE
+         ================================================================== -->
+    <!-- Top Telemetry Header -->
+    <g transform="translate(-452, -266)">
+      <!-- Status Glyphs -->
+      <polygon points="0,-4 4,0 0,4 -4,0" fill="#c81d25"/>
+      <polygon points="16,-4 20,0 16,4 12,0" fill="#d4af37"/>
+      <polygon points="32,-4 36,0 32,4 28,0" fill="#00f0ff"/>
+      <text x="50" y="4" fill="#d4af37" font-family="'Cinzel', serif" font-weight="700" font-size="12" letter-spacing="1">
+        ANIMUS CODEX v5.2 // MEMORY SEQUENCE 04.2
+      </text>
+      <text x="440" y="4" fill="#7a8296" font-family="'Space Grotesk', monospace" font-size="11">
+        ADITHKRISHNA_OS // SECURE_SYNC
+      </text>
+      <text x="900" y="4" text-anchor="end" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="11" font-weight="bold">
+        ◈ SYNCHRONIZATION: 100% // 60 FPS
+      </text>
+      <!-- Separator Line -->
+      <line x1="-5" y1="14" x2="910" y2="14" stroke="rgba(212,175,55,0.25)" stroke-width="1"/>
+    </g>
+
+    <!-- LEFT COLUMN: TACTICAL METRICS & SOVEREIGN ECOSYSTEMS -->
+    <g transform="translate(-450, -230)">
+      <!-- Box 1: Meta Ad Performance (₹15,000 Campaign) -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="285" height="152" rx="6" fill="#090c14" stroke="rgba(212, 175, 55, 0.35)"/>
+        <!-- Corner notches -->
+        <line x1="0" y1="8" x2="0" y2="0" stroke="#f5d77f" stroke-width="2"/>
+        <line x1="0" y1="0" x2="8" y2="0" stroke="#f5d77f" stroke-width="2"/>
+        <line x1="285" y1="144" x2="285" y2="152" stroke="#f5d77f" stroke-width="2"/>
+        <line x1="285" y1="152" x2="277" y2="152" stroke="#f5d77f" stroke-width="2"/>
+
+        <text x="18" y="28" fill="#d4af37" font-family="'Cinzel', serif" font-size="11" font-weight="700" letter-spacing="1">
+          TACTICAL META ACQUISITION
+        </text>
+        <text x="18" y="70" fill="#f6f1e3" font-family="'Cinzel', serif" font-size="34" font-weight="800">
+          ₹15,000
+        </text>
+        <text x="18" y="96" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">
+          4.82x ROAS • ₹72,300 REVENUE
+        </text>
+        <text x="18" y="125" fill="#8892a0" font-family="'Space Grotesk', monospace" font-size="10">
+          CTR: 3.84% • CONVERSIONS: 312 • CPA: ₹48
+        </text>
+      </g>
+
+      <!-- Box 2: Sovereign Platforms (Podiyo & KeralaAlert) -->
+      <g transform="translate(0, 168)">
+        <rect x="0" y="0" width="285" height="142" rx="6" fill="#090c14" stroke="rgba(212, 175, 55, 0.35)"/>
+        <!-- Corner notches -->
+        <line x1="0" y1="8" x2="0" y2="0" stroke="#00f0ff" stroke-width="2"/>
+        <line x1="0" y1="0" x2="8" y2="0" stroke="#00f0ff" stroke-width="2"/>
+
+        <text x="18" y="28" fill="#00f0ff" font-family="'Cinzel', serif" font-size="11" font-weight="700" letter-spacing="1">
+          SOVEREIGN WEB PLATFORMS
+        </text>
+        <text x="18" y="58" fill="#f6f1e3" font-family="'Space Grotesk', monospace" font-size="13" font-weight="bold">
+          ◈ PODIYO.IN <tspan fill="#d4af37">(Fashion Brand)</tspan>
+        </text>
+        <text x="18" y="82" fill="#f6f1e3" font-family="'Space Grotesk', monospace" font-size="13" font-weight="bold">
+          ◈ KERALAALERT.IN <tspan fill="#c81d25">(News Intel)</tspan>
+        </text>
+        <text x="18" y="115" fill="#8892a0" font-family="'Space Grotesk', monospace" font-size="10">
+          12K+ APPAREL ORDERS • 50K+ DAILY REACH
+        </text>
+      </g>
+    </g>
+
+    <!-- CENTER COLUMN: 14-TOOL CRAFT SEALS & WAVEFORM -->
+    <g transform="translate(-135, -230)">
+      <rect x="0" y="0" width="380" height="310" rx="6" fill="#0a0d17" stroke="rgba(212, 175, 55, 0.2)"/>
+      <text x="24" y="30" fill="#f5d77f" font-family="'Cinzel', serif" font-size="12" font-weight="700" letter-spacing="1.5">
+        ORDER OF THE CRAFT // 14 WEAPONS
+      </text>
+
+      <!-- Row 1: Video Post (AE, PR, DV, FCP) -->
+      <g transform="translate(24, 50)">
+        <!-- AE -->
+        <rect x="0" y="0" width="70" height="48" rx="4" fill="#0d111d" stroke="#d4af37" stroke-width="1"/>
+        <text x="35" y="30" text-anchor="middle" fill="#d4af37" font-family="'Cinzel', serif" font-weight="700" font-size="16">AE</text>
+        <!-- PR -->
+        <rect x="85" y="0" width="70" height="48" rx="4" fill="#0d111d" stroke="#d4af37" stroke-width="1"/>
+        <text x="120" y="30" text-anchor="middle" fill="#d4af37" font-family="'Cinzel', serif" font-weight="700" font-size="16">PR</text>
+        <!-- DV -->
+        <rect x="170" y="0" width="70" height="48" rx="4" fill="#0d111d" stroke="#d4af37" stroke-width="1"/>
+        <text x="205" y="30" text-anchor="middle" fill="#d4af37" font-family="'Cinzel', serif" font-weight="700" font-size="16">DV</text>
+        <!-- FCP -->
+        <rect x="255" y="0" width="70" height="48" rx="4" fill="#0d111d" stroke="#d4af37" stroke-width="1"/>
+        <text x="290" y="30" text-anchor="middle" fill="#d4af37" font-family="'Cinzel', serif" font-weight="700" font-size="16">FCP</text>
+      </g>
+
+      <!-- Row 2: Graphic & Digital (Ai, Ps, Cn, Px) -->
+      <g transform="translate(24, 112)">
+        <!-- Ai -->
+        <rect x="0" y="0" width="70" height="48" rx="4" fill="#1a1408" stroke="#f5d77f" stroke-width="1.2"/>
+        <text x="35" y="30" text-anchor="middle" fill="#f5d77f" font-family="'Cinzel', serif" font-weight="800" font-size="16">Ai</text>
+        <!-- Ps -->
+        <rect x="85" y="0" width="70" height="48" rx="4" fill="#06121f" stroke="#00f0ff" stroke-width="1.2"/>
+        <text x="120" y="30" text-anchor="middle" fill="#00f0ff" font-family="'Cinzel', serif" font-weight="800" font-size="16">Ps</text>
+        <!-- Cn -->
+        <rect x="170" y="0" width="70" height="48" rx="4" fill="#14081f" stroke="#d4af37" stroke-width="1.2"/>
+        <text x="205" y="30" text-anchor="middle" fill="#d4af37" font-family="'Cinzel', serif" font-weight="800" font-size="16">Cn</text>
+        <!-- Px -->
+        <rect x="255" y="0" width="70" height="48" rx="4" fill="#1a0b12" stroke="#ff3366" stroke-width="1.2"/>
+        <text x="290" y="30" text-anchor="middle" fill="#ff3366" font-family="'Cinzel', serif" font-weight="800" font-size="16">Px</text>
+      </g>
+
+      <!-- Row 3: AI & Web Tech (AGY, GPT, Claude, Python) -->
+      <g transform="translate(24, 174)">
+        <text x="0" y="16" fill="#8892a0" font-family="'Space Grotesk', monospace" font-size="10">
+          TECH STACK: ANTIGRAVITY • CHATGPT • CLAUDE • WP • WIX • PYTHON
+        </text>
+      </g>
+
+      <!-- Animus Kinetic Pulse Wave -->
+      <path d="M24,250 C80,210 140,260 200,195 C260,140 310,180 355,160" fill="none" stroke="url(#ac-animus-line)" stroke-width="3" filter="url(#ac-glow)"/>
+      <text x="24" y="285" fill="#c5beaa" font-family="'Cormorant Garamond', Georgia, serif" font-size="13" font-style="italic">
+        "Veritas in omnibus — Classical craftsmanship fused with algorithmic precision."
+      </text>
+    </g>
+
+    <!-- RIGHT COLUMN: CHRONICA AUDIT CONSOLE -->
+    <g transform="translate(270, -230)">
+      <rect x="0" y="0" width="180" height="310" rx="6" fill="#080a11" stroke="rgba(212, 175, 55, 0.15)"/>
+      <text x="16" y="28" fill="#d4af37" font-family="'Cinzel', serif" font-size="10" font-weight="700" letter-spacing="1">
+        ANIMUS LOG
+      </text>
+      <text x="16" y="55" fill="#5a6275" font-family="'Space Grotesk', monospace" font-size="9">> init memory_seq</text>
+      <text x="16" y="75" fill="#5a6275" font-family="'Space Grotesk', monospace" font-size="9">> roas_index: 4.82x</text>
+      <text x="16" y="95" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="9">> podiyo_store [OK]</text>
+      <text x="16" y="115" fill="#d4af37" font-family="'Space Grotesk', monospace" font-size="9">> keralaalert [OK]</text>
+      <text x="16" y="135" fill="#c81d25" font-family="'Space Grotesk', monospace" font-size="9">> cinema_4k [READY]</text>
+      <text x="16" y="155" fill="#5a6275" font-family="'Space Grotesk', monospace" font-size="9">> 14_tools [ACTIVE]</text>
+      <text x="16" y="180" fill="#f5d77f" font-family="'Space Grotesk', monospace" font-size="9" font-weight="bold">> READY TO ENTER</text>
+
+      <line x1="16" y1="200" x2="164" y2="200" stroke="rgba(212,175,55,0.2)"/>
+      <text x="16" y="225" fill="#8892a0" font-family="'Space Grotesk', monospace" font-size="9">TARGET: ADITH_S</text>
+      <text x="16" y="245" fill="#8892a0" font-family="'Space Grotesk', monospace" font-size="9">MEM_DEPTH: 100%</text>
+      <text x="16" y="265" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="9">LOC: CALICUT // IN</text>
+    </g>
+
+    <!-- CENTER CALL-TO-ACTION BUTTON (INLAID OBSIDIAN & GOLD) -->
+    <g transform="translate(0, 165)">
+      <rect x="-210" y="0" width="420" height="54" rx="6" fill="#0c101a" stroke="url(#ac-gold-metal)" stroke-width="1.8" filter="url(#ac-glow)"/>
+      <!-- Inner hairline -->
+      <rect x="-205" y="4" width="410" height="46" rx="4" fill="none" stroke="rgba(212,175,55,0.3)" stroke-width="1"/>
+      <text x="0" y="34" text-anchor="middle" fill="#f5d77f" font-family="'Cinzel', serif" font-weight="800" font-size="14" letter-spacing="3">
+        ◈ ENTER THE MEMORY TIMELINE ◈
+      </text>
+    </g>
+  </g>
+</svg>

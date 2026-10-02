@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADITHKRISHNA S. // Digital Marketer, Visual Architect &amp; Growth Strategist</title>
+  
+  <meta name="description" content="Digital Marketer, Video Colorist &amp; Growth Strategist: After Effects, Premiere Pro, DaVinci Resolve, FCP, Illustrator, Photoshop, Canva, Pixelmator Pro, Antigravity, ChatGPT, Claude, WordPress, Wix, Python, Meta Ads, podiyo.in &amp; keralaalert.in." />
+  <meta name="keywords" content="AdithKrishna S, After Effects, Premiere Pro, DaVinci Resolve, FCP, Final Cut Pro, Illustrator, Photoshop, Canva, Pixelmator Pro, Antigravity, ChatGPT, Claude, WordPress, Wix, Python, Meta Ads, podiyo.in, keralaalert.in, Growth Marketing" />
+  <meta name="author" content="AdithKrishna S." />
+  <meta name="theme-color" content="#070709" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ADITHKRISHNA S. // Digital Marketer, Video Editor &amp; Growth Strategist" />
+  <meta property="og:description" content="After Effects, Premiere Pro, DaVinci Resolve, FCP, Illustrator, Photoshop, Canva, Pixelmator Pro, Antigravity, ChatGPT, Claude, WordPress, Wix, Python, Meta Ads." />
+  <meta property="og:image" content="assets/images/computer-workstation.svg" />
+
+  <!-- Google Fonts: Cinzel (Ancient Brotherhood Serif), Cormorant Garamond, Space Grotesk, Syne, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+  <link rel="stylesheet" href="css/journey.css" />
+</head>
+<body>
+
+  <!-- Film Grain Noise Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Ambient Glow Background Spots -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+  <!-- Custom Magnetic Cursor -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" aria-hidden="true">
+    <span class="cursor-text"></span>
+  </div>
+
+  <!-- Background Live Ambient Tune -->
+  <audio id="kungfu-live-audio" loop preload="auto" src="assets/audio/kungfu-vintage-theme.mp3"></audio>
+
+  <!-- ========================================================================
+       PRELOADER
+       ======================================================================== -->
+  <aside class="preloader" aria-label="Loading Experience">
+    <div class="preloader-header">
+      <div class="preloader-brand">
+        <span class="preloader-brand-dot"></span>
+        <span>ADITHKRISHNA S. // DIGITAL MARKETING COMMAND</span>
+      </div>
+      <div>INITIALIZING ECOSYSTEM</div>
+    </div>
+
+    <div class="preloader-center">
+      <h1 class="preloader-title">
+        <span>ADITHKRISHNA</span>
+        <span>DIGITAL</span>
+      </h1>
+      <p class="preloader-subtext">Meta Ads • Live Platforms (podiyo.in &amp; keralaalert.in) • Design Suite • AI Cinema</p>
+    </div>
+
+    <div class="preloader-footer">
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+      <div class="preloader-number">00%</div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Logo / Monogram & Creator Photo -->
+      <a href="#hero" class="nav-brand magnetic-target" aria-label="Home">
+        <img src="assets/images/avatar/adith-profile.jpg" alt="AdithKrishna S." style="width:34px; height:34px; border-radius:50%; object-fit:cover; object-position:top center; border:1.5px solid var(--accent-gold); box-shadow:0 0 12px rgba(212,175,55,0.4);" />
+        <span style="font-family: var(--font-display); letter-spacing: 0.1em;">ADITHKRISHNA S.</span>
+      </a>
+
+      <!-- Floating Dock Nav -->
+      <nav class="nav-links-dock" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link">Workstation</a>
+        <a href="#timeline-journey" class="nav-link">Timeline</a>
+        <a href="#suite-portals" class="nav-link">Design Suite</a>
+        <a href="#ai-world" class="nav-link">AI World</a>
+        <a href="#live-platforms" class="nav-link">Platforms</a>
+        <a href="#work" class="nav-link">All Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Vintage Kung Fu Ambience & Sound Toggle Button -->
+        <button id="kungfu-audio-toggle" class="sound-toggle-btn magnetic-target" aria-label="Toggle Vintage Kung Fu Soundscape" title="Toggle Vintage Kung Fu Ambience & Haptic Sound (Light Volume)" style="min-width: 140px;">
+          <div class="sound-bars" aria-hidden="true">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </div>
+          <span class="kungfu-audio-title-text" style="font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.08em;">◈ KUNG FU AMBIENCE</span>
+          <span class="kungfu-audio-status" style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-gold-bright); margin-left: 2px;">ON</span>
+        </button>
+
+        <!-- Availability Status Pill -->
+        <div class="nav-availability" title="Accepting select marketing commissions">
+          <span class="beacon"></span>
+          <span>OPEN FOR COMMISSIONS</span>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <nav class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Home Workstation</a>
+      <a href="#timeline-journey" class="mobile-nav-link">Project Timeline</a>
+      <a href="#suite-portals" class="mobile-nav-link">Design Suite (Ai • Ps • Canva)</a>
+      <a href="#ai-world" class="mobile-nav-link">World of AI Videos</a>
+      <a href="#live-platforms" class="mobile-nav-link">Live Sites (Podiyo &amp; KeralaAlert)</a>
+      <a href="#work" class="mobile-nav-link">All Works</a>
+      <a href="#contact" class="mobile-nav-link">Start a Campaign</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <p style="font-family: var(--font-mono); color: var(--text-muted); font-size: 0.85rem;">ADITHKRISHNA S. // +91 94957 14546 • ADITHANG46@GMAIL.COM</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         1. HERO SECTION: THE COMPUTER WORKSTATION GATEWAY
+         ====================================================================== -->
+    <section id="hero" class="hero-section" style="padding-bottom: 2rem;">
+      <!-- Interactive Kinetic Background Canvas -->
+      <canvas id="hero-canvas" class="hero-canvas"></canvas>
+
+      <div class="container" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <div class="hero-title-badge" data-reveal>
+          <span style="color:var(--accent-gold-bright);">◈</span>
+          <span>ANIMUS CODEX v5.2 // DIGITAL ARCHITECT &amp; GROWTH STRATEGIST</span>
+        </div>
+
+        <h1 class="hero-headline" data-reveal data-delay="100" style="max-width: 980px; margin-left: auto; margin-right: auto;">
+          ADITHKRISHNA S.<br />
+          <span class="text-gradient">CHRONICLES OF A DIGITAL ARCHITECT.</span><br />
+          <span class="outline-text">GROWTH MARKETING &amp; CINEMA.</span>
+        </h1>
+
+        <p class="hero-description" data-reveal data-delay="200" style="max-width: 860px; margin-left: auto; margin-right: auto;">
+          Bridging classical visual mastery with algorithmic precision: from <strong>₹15,000 Meta Ad campaigns scaled to 4.82x ROAS</strong>, to sovereign platforms (<strong>podiyo.in</strong> curated fashion &amp; <strong>keralaalert.in</strong> news), cinema post-production (<strong>After Effects • Premiere • DaVinci • FCP</strong>), design (<strong>Illustrator • Photoshop • Canva • Pixelmator Pro</strong>), and modern machine intelligence (<strong>Antigravity • ChatGPT • Claude • WordPress • Wix • Python</strong>).
+        </p>
+
+        <!-- Quick Metrics Highlights -->
+        <div class="hero-metrics" data-reveal data-delay="300" style="margin: 0 auto 2.5rem; max-width: 720px;">
+          <div class="metric-item">
+            <div class="metric-val">₹15K</div>
+            <div class="metric-label">Meta Ad Spend Managed</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">4.82<span>x</span></div>
+            <div class="metric-label">Attributed ROAS</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">50K<span>+</span></div>
+            <div class="metric-label">Daily Platform Reach</div>
+          </div>
+        </div>
+
+        <!-- 3D COMPUTER WORKSTATION CENTERPIECE -->
+        <div id="hero-computer-wrap" class="hero-computer-container" data-reveal data-delay="400" title="Click or Scroll to Enter Memory Timeline">
+          <img class="hero-computer-img" src="assets/images/computer-workstation.svg" alt="AdithKrishna S. Animus Codex Workstation" />
+          <div class="hero-scroll-indicator">
+            <div class="scroll-mouse-icon"></div>
+            <span>◈ SCROLL TO ENTER MEMORY TIMELINE ◈</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Creative & Technical Software Arsenal Marquee Ticker -->
+      <div class="hero-marquee-wrap" aria-hidden="true" style="margin-top: 3.5rem;">
+        <div class="marquee-track">
+          <div class="marquee-item"><img src="assets/images/icons/after-effects.svg" alt="After Effects" class="marquee-software-logo" /> <span>AFTER EFFECTS</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/premiere.svg" alt="Premiere Pro" class="marquee-software-logo" /> <span>PREMIERE PRO</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/davinci.svg" alt="DaVinci Resolve" class="marquee-software-logo" /> <span>DAVINCI RESOLVE</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/fcp.svg" alt="Final Cut Pro" class="marquee-software-logo" /> <span>FINAL CUT PRO (FCP)</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/illustrator.svg" alt="Adobe Illustrator" class="marquee-software-logo" /> <span>ADOBE ILLUSTRATOR</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/photoshop.svg" alt="Adobe Photoshop" class="marquee-software-logo" /> <span>ADOBE PHOTOSHOP</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/canva.svg" alt="Canva" class="marquee-software-logo" /> <span>CANVA</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/pixelmator.svg" alt="Pixelmator Pro" class="marquee-software-logo" /> <span>PIXELMATOR PRO</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/antigravity.svg" alt="Google Antigravity" class="marquee-software-logo" /> <span>ANTIGRAVITY</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/chatgpt.svg" alt="ChatGPT" class="marquee-software-logo" /> <span>CHATGPT</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/claude.svg" alt="Claude" class="marquee-software-logo" /> <span>CLAUDE</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/wordpress.svg" alt="WordPress" class="marquee-software-logo" /> <span>WORDPRESS</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/wix.svg" alt="Wix" class="marquee-software-logo" /> <span>WIX</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/python.svg" alt="Python" class="marquee-software-logo" /> <span>PYTHON</span> <span class="marquee-separator">◈</span></div>
+          <!-- Seamless Loop Duplicate -->
+          <div class="marquee-item"><img src="assets/images/icons/after-effects.svg" alt="After Effects" class="marquee-software-logo" /> <span>AFTER EFFECTS</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/premiere.svg" alt="Premiere Pro" class="marquee-software-logo" /> <span>PREMIERE PRO</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/davinci.svg" alt="DaVinci Resolve" class="marquee-software-logo" /> <span>DAVINCI RESOLVE</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/fcp.svg" alt="Final Cut Pro" class="marquee-software-logo" /> <span>FINAL CUT PRO (FCP)</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/illustrator.svg" alt="Adobe Illustrator" class="marquee-software-logo" /> <span>ADOBE ILLUSTRATOR</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/photoshop.svg" alt="Adobe Photoshop" class="marquee-software-logo" /> <span>ADOBE PHOTOSHOP</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/canva.svg" alt="Canva" class="marquee-software-logo" /> <span>CANVA</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/pixelmator.svg" alt="Pixelmator Pro" class="marquee-software-logo" /> <span>PIXELMATOR PRO</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/antigravity.svg" alt="Google Antigravity" class="marquee-software-logo" /> <span>ANTIGRAVITY</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/chatgpt.svg" alt="ChatGPT" class="marquee-software-logo" /> <span>CHATGPT</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/claude.svg" alt="Claude" class="marquee-software-logo" /> <span>CLAUDE</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/wordpress.svg" alt="WordPress" class="marquee-software-logo" /> <span>WORDPRESS</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/wix.svg" alt="Wix" class="marquee-software-logo" /> <span>WIX</span> <span class="marquee-separator">◈</span></div>
+          <div class="marquee-item"><img src="assets/images/icons/python.svg" alt="Python" class="marquee-software-logo" /> <span>PYTHON</span> <span class="marquee-separator">◈</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. TIMELINE ODYSSEY SECTION (ENTERED FROM COMPUTER)
+         ====================================================================== -->
+    <section id="timeline-journey" class="timeline-section">
+      <div class="container">
+        <div class="section-header" data-reveal style="text-align: center; align-items: center;">
+          <div class="section-tag">Memory Sequence Corridor</div>
+          <h2 class="section-title">THE PROJECT &amp; CAMPAIGN CHRONICLES</h2>
+          <p class="section-subtitle">
+            Travel chronologically through AdithKrishna's milestones: from high-ROAS paid acquisition and live media platforms to graphic craft and AI cinema.
+          </p>
+        </div>
+
+        <!-- Dynamic Timeline Track (Injected via scroll-journey.js) -->
+        <div class="timeline-track"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. DESIGN SUITE DIMENSION (ILLUSTRATOR • PHOTOSHOP • CANVA)
+         ====================================================================== -->
+    <section id="suite-portals" class="suite-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag">Guild Relics &amp; Visual Craft</div>
+          <h2 class="section-title">THE DESIGN SUITE: ILLUSTRATOR • PHOTOSHOP • CANVA • PIXELMATOR</h2>
+          <p class="section-subtitle">
+            Step through the creative tool portals. Explore real certificates, commercial merchandise, branding stationery, and high-impact promotional graphics produced by AdithKrishna S.
+          </p>
+        </div>
+
+        <!-- 5 Interactive Brand Portals -->
+        <div class="suite-portals-nav" data-reveal data-delay="100">
+          <!-- All Suite Portal -->
+          <div class="suite-portal-btn active magnetic-target" data-suite="all">
+            <div class="suite-portal-icon">
+              <img src="assets/images/icons/suite-all.svg" alt="All Design Suites" />
+            </div>
+            <div class="suite-portal-meta">
+              <h4>All Design Suites</h4>
+              <p>Combined Vector, Print &amp; Digital</p>
+            </div>
+          </div>
+
+          <!-- Illustrator Portal -->
+          <div class="suite-portal-btn magnetic-target" data-suite="illustrator">
+            <div class="suite-portal-icon">
+              <img src="assets/images/icons/illustrator.svg" alt="Adobe Illustrator" />
+            </div>
+            <div class="suite-portal-meta">
+              <h4>Adobe Illustrator</h4>
+              <p>Vector Branding &amp; Stationery</p>
+            </div>
+          </div>
+
+          <!-- Photoshop Portal -->
+          <div class="suite-portal-btn magnetic-target" data-suite="photoshop">
+            <div class="suite-portal-icon">
+              <img src="assets/images/icons/photoshop.svg" alt="Adobe Photoshop" />
+            </div>
+            <div class="suite-portal-meta">
+              <h4>Adobe Photoshop</h4>
+              <p>Certificates, Posters &amp; Retouching</p>
+            </div>
+          </div>
+
+          <!-- Canva Portal -->
+          <div class="suite-portal-btn magnetic-target" data-suite="canva">
+            <div class="suite-portal-icon">
+              <img src="assets/images/icons/canva.svg" alt="Canva Suite" />
+            </div>
+            <div class="suite-portal-meta">
+              <h4>Canva Creative</h4>
+              <p>Social Media Creatives &amp; Fast Ads</p>
+            </div>
+          </div>
+
+          <!-- Pixelmator Pro Portal -->
+          <div class="suite-portal-btn magnetic-target" data-suite="pixelmator">
+            <div class="suite-portal-icon">
+              <img src="assets/images/icons/pixelmator.svg" alt="Pixelmator Pro" />
+            </div>
+            <div class="suite-portal-meta">
+              <h4>Pixelmator Pro</h4>
+              <p>Mac-Native Graphics &amp; Visual Art</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Suite Projects Grid (Injected from real works in 'My' folder) -->
+        <div class="suite-projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. REAL COMMERCIAL ADS, REELS & AI VIDEO SHOWCASE
+         ====================================================================== -->
+    <section id="ai-world" class="ai-world-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag">The Animus Projection Chamber</div>
+          <h2 class="section-title">COMMERCIAL ADS, REELS &amp; AI CINEMA</h2>
+          <p class="section-subtitle">
+            Watch real commercial client ads, festival campaign reels, brand motion reveals, and neural AI video loops edited and directed by AdithKrishna S. Hover or click to play in full screen.
+          </p>
+        </div>
+
+        <div class="ai-world-grid">
+          <!-- Video 1: Onam Festival Commercial Ad -->
+          <div class="ai-video-card magnetic-target" data-cursor="play" onclick="if(window.projectModal) window.projectModal.open('onam-festival-commercial-ad')" data-reveal data-delay="100">
+            <video class="ai-video-element" loop muted playsinline preload="metadata">
+              <source src="assets/my-projects/videos/onam-festival-commercial-ad.mp4" type="video/mp4" />
+            </video>
+            <div class="ai-video-overlay">
+              <span class="ai-video-tag" style="color:var(--accent-lime);">FESTIVAL COMMERCIAL AD</span>
+              <h3 class="ai-video-title">Onam Festive Campaign</h3>
+              <p class="ai-video-desc">Vibrant festive celebration ad with beat-synced pacing &amp; DaVinci color grading.</p>
+            </div>
+          </div>
+
+          <!-- Video 2: Variety Commercial Ad -->
+          <div class="ai-video-card magnetic-target" data-cursor="play" onclick="if(window.projectModal) window.projectModal.open('variety-commercial-ad')" data-reveal data-delay="150">
+            <video class="ai-video-element" loop muted playsinline preload="metadata">
+              <source src="assets/my-projects/videos/variety-commercial-ad.mp4" type="video/mp4" />
+            </video>
+            <div class="ai-video-overlay">
+              <span class="ai-video-tag" style="color:#00d2ff;">COMMERCIAL PROMOTION</span>
+              <h3 class="ai-video-title">Variety Commercial Ad</h3>
+              <p class="ai-video-desc">High-energy fast-cut promotional video engineered for mobile feed retention.</p>
+            </div>
+          </div>
+
+          <!-- Video 3: Brand Logo Motion Reveal -->
+          <div class="ai-video-card magnetic-target" data-cursor="play" onclick="if(window.projectModal) window.projectModal.open('brand-logo-motion-reveal')" data-reveal data-delay="200">
+            <video class="ai-video-element" loop muted playsinline preload="metadata">
+              <source src="assets/my-projects/videos/brand-logo-motion-reveal.mp4" type="video/mp4" />
+            </video>
+            <div class="ai-video-overlay">
+              <span class="ai-video-tag" style="color:#ff3366;">3D MOTION GRAPHICS</span>
+              <h3 class="ai-video-title">Brand Logo Reveal</h3>
+              <p class="ai-video-desc">Cinematic 3D identity sequence with particle shaders &amp; dynamic optical flares.</p>
+            </div>
+          </div>
+
+          <!-- Video 4: Lifestyle & Fashion Client Reel -->
+          <div class="ai-video-card magnetic-target" data-cursor="play" onclick="if(window.projectModal) window.projectModal.open('commercial-client-reel-1')" data-reveal data-delay="250">
+            <video class="ai-video-element" loop muted playsinline preload="metadata">
+              <source src="assets/my-projects/videos/commercial-client-reel-1.mp4" type="video/mp4" />
+            </video>
+            <div class="ai-video-overlay">
+              <span class="ai-video-tag" style="color:#ffd700;">VIRAL 9:16 SOCIAL REEL</span>
+              <h3 class="ai-video-title">Client Fashion Reel</h3>
+              <p class="ai-video-desc">Short-form vertical reel tailored for Instagram Reels &amp; TikTok discovery.</p>
+            </div>
+          </div>
+
+          <!-- Video 5: Gemini Neural AI Video -->
+          <div class="ai-video-card magnetic-target" data-cursor="play" onclick="if(window.projectModal) window.projectModal.open('ai-neural-video-gemini')" data-reveal data-delay="300">
+            <video class="ai-video-element" loop muted playsinline preload="metadata">
+              <source src="assets/my-projects/ai/erasio_gemini_generated_video_28FCEC57.mp4" type="video/mp4" />
+            </video>
+            <div class="ai-video-overlay">
+              <span class="ai-video-tag" style="color:#a855f7;">GEMINI NEURAL DIFFUSION</span>
+              <h3 class="ai-video-title">Neural Motion Synthesis</h3>
+              <p class="ai-video-desc">Prompt-conditioned latent space interpolation with optical stabilization.</p>
+            </div>
+          </div>
+
+          <!-- Video 6: Snapgram Procedural Reel -->
+          <div class="ai-video-card magnetic-target" data-cursor="play" onclick="if(window.projectModal) window.projectModal.open('ai-motion-diffusion-snapgram')" data-reveal data-delay="350">
+            <video class="ai-video-element" loop muted playsinline preload="metadata">
+              <source src="assets/my-projects/ai/snapgram.io_395925162369.MP4" type="video/mp4" />
+            </video>
+            <div class="ai-video-overlay">
+              <span class="ai-video-tag" style="color:#00f0ff;">SNAPGRAM AI // 9:16 VERTICAL</span>
+              <h3 class="ai-video-title">Snapgram AI Reel</h3>
+              <p class="ai-video-desc">High-velocity vertical video engineered for sub-3-second mobile hooks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. LIVE PLATFORMS SECTION (PODIYO.IN & KERALAALERT.IN)
+         ====================================================================== -->
+    <section id="live-platforms" class="platforms-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag">Sovereign Web Platforms</div>
+          <h2 class="section-title">SOVEREIGN WEB ECOSYSTEMS: PODIYO.IN &amp; KERALAALERT.IN</h2>
+          <p class="section-subtitle">
+            Explore live digital platforms architected, SEO-optimized, and scaled by AdithKrishna S. Direct access to live fashion e-commerce and real-time news alert networks.
+          </p>
+        </div>
+
+        <div class="platforms-grid">
+          <!-- Platform 1: Podiyo.in (Fashion Brand) -->
+          <article class="platform-card" data-reveal data-delay="100">
+            <div class="platform-media-wrap" onclick="if(window.projectModal) window.projectModal.open('podiyo-fashion-platform')" style="cursor:pointer;">
+              <img src="assets/images/websites/podiyo.svg" alt="Podiyo.in Fashion Storefront Preview" />
+            </div>
+            <div class="platform-body">
+              <div class="platform-header-row">
+                <h3 class="platform-name">PODIYO.IN</h3>
+                <span class="platform-status-badge">● LIVE FASHION BRAND</span>
+              </div>
+              <p class="platform-desc">
+                Curated streetwear fashion and apparel e-commerce storefront. Built for high-converting visual merchandising, seasonal capsule drops, heavy-cotton oversized tees, and viral social lookbook funnels.
+              </p>
+              <div class="platform-metrics-list">
+                <div class="platform-metric-item">
+                  <span class="pm-val">12K+</span>
+                  <span class="pm-label">APPAREL ORDERS</span>
+                </div>
+                <div class="platform-metric-item">
+                  <span class="pm-val">4.9★</span>
+                  <span class="pm-label">CUSTOMER RATING</span>
+                </div>
+                <div class="platform-metric-item">
+                  <span class="pm-val">D2C Drop</span>
+                  <span class="pm-label">FASHION ENGINE</span>
+                </div>
+              </div>
+              <div class="platform-actions">
+                <a href="https://podiyo.in" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:0.75rem 1.4rem; font-size:0.82rem;">
+                  <span>Visit Podiyo.in ↗</span>
+                </a>
+                <button class="btn-secondary" onclick="if(window.projectModal) window.projectModal.open('podiyo-fashion-platform');" style="padding:0.7rem 1.2rem; font-size:0.82rem;">
+                  Case Study
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Platform 2: KeralaAlert.in -->
+          <article class="platform-card" data-reveal data-delay="200">
+            <div class="platform-media-wrap" onclick="if(window.projectModal) window.projectModal.open('keralaalert-news-portal')" style="cursor:pointer;">
+              <img src="assets/images/websites/keralaalert.svg" alt="KeralaAlert.in Portal Preview" />
+            </div>
+            <div class="platform-body">
+              <div class="platform-header-row">
+                <h3 class="platform-name">KERALAALERT.IN</h3>
+                <span class="platform-status-badge" style="color:#ff3366; border-color:rgba(255,51,102,0.4); background:rgba(255,51,102,0.1);">
+                  ● HIGH-TRAFFIC PORTAL
+                </span>
+              </div>
+              <p class="platform-desc">
+                Real-time regional breaking news and public emergency alert publication. High-concurrency architecture handling rapid traffic bursts with automated Telegram &amp; WhatsApp push distribution.
+              </p>
+              <div class="platform-metrics-list">
+                <div class="platform-metric-item">
+                  <span class="pm-val">50,000+</span>
+                  <span class="pm-label">DAILY READERS</span>
+                </div>
+                <div class="platform-metric-item">
+                  <span class="pm-val">85,000+</span>
+                  <span class="pm-label">PUSH SUBSCRIBERS</span>
+                </div>
+                <div class="platform-metric-item">
+                  <span class="pm-val">&lt; 0.8s</span>
+                  <span class="pm-label">LOAD LATENCY</span>
+                </div>
+              </div>
+              <div class="platform-actions">
+                <a href="https://keralaalert.in" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:0.75rem 1.4rem; font-size:0.82rem; background:#ff3366; color:#fff;">
+                  <span>Visit KeralaAlert.in ↗</span>
+                </a>
+                <button class="btn-secondary" onclick="if(window.projectModal) window.projectModal.open('keralaalert-news-portal');" style="padding:0.7rem 1.2rem; font-size:0.82rem;">
+                  Case Study
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. PERFORMANCE MARKETING FEATURE: ₹15,000 META AD CAMPAIGN
+         ====================================================================== -->
+    <section id="meta-ads-section" class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="ac-ornament-card" style="background: linear-gradient(135deg, rgba(14, 18, 28, 0.95) 0%, rgba(8, 10, 16, 0.98) 100%); border: 1px solid rgba(212, 175, 55, 0.35); border-radius: var(--radius-sm); padding: clamp(2rem, 4vw, 3.5rem); display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2.5rem; align-items: center; box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 30px rgba(212, 175, 55, 0.1);" data-reveal>
+          <div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom: 1rem;">
+              <span style="font-family: var(--font-display); font-size: 0.75rem; background: var(--grad-gold); color: #06070a; padding: 0.25rem 0.8rem; border-radius: 2px; font-weight: 800; letter-spacing: 0.08em;">
+                ◈ TACTICAL LEDGER // META PERFORMANCE
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent-cyan); font-weight: 700;">
+                ₹15,000 BUDGET SCALED
+              </span>
+            </div>
+
+            <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 900; color: var(--text-primary); line-height: 1.1; margin-bottom: 1rem; text-transform: uppercase;">
+              META ADS CREATIVE ENGINE // 4.82x BLENDED ROAS
+            </h2>
+
+            <p style="font-family: var(--font-classical); color: var(--text-secondary); font-size: 1.15rem; font-style: italic; line-height: 1.7; margin-bottom: 1.5rem;">
+              Engineered and managed by <strong>AdithKrishna S.</strong> A ₹15,000 strategic ad budget deployed across Instagram Reels and Facebook feeds generated <strong>₹72,300+ in attributed gross revenue</strong> with a 3.84% CTR and 312 direct conversions.
+            </p>
+
+            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+              <div>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); display:block;">AD SPEND</span>
+                <span style="font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: var(--text-primary);">₹15,000</span>
+              </div>
+              <div>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); display:block;">GROSS REVENUE</span>
+                <span style="font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: var(--accent-gold-bright);">₹72,300</span>
+              </div>
+              <div>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); display:block;">RETURN ON AD SPEND</span>
+                <span style="font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: var(--accent-cyan);">4.82x ROAS</span>
+              </div>
+            </div>
+
+            <button class="btn-primary" onclick="if(window.projectModal) window.projectModal.open('meta-ads-15k-campaign');">
+              <span>Inspect Campaign Strategy &amp; Creative Angles</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div onclick="if(window.projectModal) window.projectModal.open('meta-ads-15k-campaign');" style="cursor:pointer; border-radius:var(--radius-sm); overflow:hidden; border:1px solid rgba(212,175,55,0.3); box-shadow: 0 15px 40px rgba(0,0,0,0.8);">
+            <img src="assets/images/graphic-design/meta-ad-15k.svg" alt="Meta Ads Performance Dashboard" style="width:100%; height:auto;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. ALL SELECTED WORKS (MASONRY GALLERY & SEARCH)
+         ====================================================================== -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-header split" data-reveal>
+          <div>
+            <div class="section-tag">◈ Synchronized Memory Archive</div>
+            <h2 class="section-title">THE CODEX OF MASTERED WORKS</h2>
+            <p class="section-subtitle">Filter through the master archive of commercial campaigns, fashion storefronts, cinema colorgrades, vector relics, and neural experiments.</p>
+          </div>
+
+          <!-- Quick Search Filter Bar -->
+          <div style="min-width: 280px;">
+            <input type="text" class="form-input gallery-search-input" placeholder="Search by tool, client, keyword..." />
+          </div>
+        </div>
+
+        <!-- Filter Pill Buttons -->
+        <div class="filter-bar-wrap" data-reveal data-delay="100">
+          <div class="filter-categories">
+            <button class="filter-btn active magnetic-target" data-filter="all">
+              <span>All Work</span>
+              <span class="count-badge">--</span>
+            </button>
+            <button class="filter-btn magnetic-target" data-filter="graphic-design">
+              <span>Meta Ads &amp; Design</span>
+              <span class="count-badge">--</span>
+            </button>
+            <button class="filter-btn magnetic-target" data-filter="websites">
+              <span>Live Sites (Podiyo/KeralaAlert)</span>
+              <span class="count-badge">--</span>
+            </button>
+            <button class="filter-btn magnetic-target" data-filter="ai-videos">
+              <span>AI Videos</span>
+              <span class="count-badge">--</span>
+            </button>
+            <button class="filter-btn magnetic-target" data-filter="reels">
+              <span>Motion Reels</span>
+              <span class="count-badge">--</span>
+            </button>
+            <button class="filter-btn magnetic-target" data-filter="posters">
+              <span>Posters &amp; Certificates</span>
+              <span class="count-badge">--</span>
+            </button>
+            <button class="filter-btn magnetic-target" data-filter="brochures">
+              <span>Print &amp; Stationery</span>
+              <span class="count-badge">--</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. ABOUT THE CREATOR & DIGITAL MARKETER
+         ====================================================================== -->
+    <section id="about" class="section" style="background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: Creator Visual Portrait Card -->
+          <div class="about-visual-column" data-reveal>
+            <div class="about-portrait-card ac-ornament-card">
+              <img class="about-portrait-img" src="assets/images/avatar/adith-profile.jpg" alt="AdithKrishna S. - Digital Marketer &amp; Visual Storyteller" style="object-position: top center;" />
+              <div class="about-portrait-overlay">
+                <div class="about-status-chip" style="background: rgba(6,7,10,0.85); border: 1px solid var(--accent-gold); color: var(--accent-gold-bright);">
+                  <span class="beacon" style="background: var(--accent-gold);"></span>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em;">◈ CODEX ACTIVE // ACCEPTING Q4</span>
+                </div>
+                <div class="about-name-label" style="font-family: var(--font-display); color: #ffffff; letter-spacing: 0.08em;">ADITHKRISHNA S.</div>
+                <div class="about-role-label" style="font-family: var(--font-classical); font-size: 1.15rem; color: var(--accent-gold-bright);">Digital Marketer, Growth Strategist &amp; Visual Creator</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Manifesto, Story, Tools Stack & Milestones -->
+          <div class="about-content-column">
+            <div data-reveal>
+              <div class="section-tag">◈ Creed of the Digital Artisan</div>
+              <h2 class="section-title">WHERE ANCIENT CRAFT MEETS HOLOGRAPHIC REVENUE</h2>
+              <div class="about-manifesto">
+                “Nothing is true; everything is quantifiable. In the digital arena, craft must <span>pierce the noise</span>, <span>command devotion</span>, and <span>convert attention into sovereign growth</span>.”
+              </div>
+            </div>
+
+            <div class="about-story" data-reveal data-delay="100">
+              <p>
+                I'm <strong>AdithKrishna S.</strong>, a multidisciplinary digital marketer, video colorist, and visual creator based in Kerala, operating globally. My work bridges full-funnel digital marketing with high-craft video post-production, design suites, and agentic AI systems.
+              </p>
+              <p>
+                From scaling <strong>₹15,000 Meta Ad testing budgets to 4.82x ROAS</strong>, to founding and distributing high-traffic platforms like <strong>Podiyo.in (Curated Fashion &amp; Apparel)</strong> and <strong>KeralaAlert.in (Real-Time News)</strong>, I combine video editing mastery (<strong>After Effects, Premiere Pro, DaVinci Resolve, FCP</strong>), graphic design (<strong>Illustrator, Photoshop, Canva, Pixelmator Pro</strong>), and cutting-edge tech (<strong>Antigravity, ChatGPT, Claude, WordPress, Wix, Python</strong>).
+              </p>
+            </div>
+
+            <!-- Software & Tools Stack Matrix: The 14-Core Arsenal -->
+            <div class="skills-matrix-wrap" data-reveal data-delay="200">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: var(--accent-gold-bright); letter-spacing: 0.05em;">◈ THE 14-TOOL BROTHERHOOD ARSENAL</h3>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); letter-spacing: 0.12em;">SYNCHRONIZED MASTERY</span>
+              </div>
+
+              <!-- 14-Tool Interactive Brand Logos Showcase Strip -->
+              <div class="arsenal-logos-strip" style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 1.25rem 0 1.75rem 0; padding: 1rem; background: rgba(14,18,27,0.7); border: 1px solid var(--border-light); border-radius: var(--radius-sm);">
+                <div class="arsenal-logo-pill magnetic-target" title="After Effects"><img src="assets/images/icons/after-effects.svg" alt="After Effects" style="width:26px; height:26px; border-radius:5px;" /><span>After Effects</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Premiere Pro"><img src="assets/images/icons/premiere.svg" alt="Premiere Pro" style="width:26px; height:26px; border-radius:5px;" /><span>Premiere Pro</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="DaVinci Resolve"><img src="assets/images/icons/davinci.svg" alt="DaVinci Resolve" style="width:26px; height:26px; border-radius:5px;" /><span>DaVinci Resolve</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Final Cut Pro"><img src="assets/images/icons/fcp.svg" alt="Final Cut Pro" style="width:26px; height:26px; border-radius:5px;" /><span>Final Cut Pro</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Adobe Illustrator"><img src="assets/images/icons/illustrator.svg" alt="Illustrator" style="width:26px; height:26px; border-radius:5px;" /><span>Illustrator</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Adobe Photoshop"><img src="assets/images/icons/photoshop.svg" alt="Photoshop" style="width:26px; height:26px; border-radius:5px;" /><span>Photoshop</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Canva"><img src="assets/images/icons/canva.svg" alt="Canva" style="width:26px; height:26px; border-radius:5px;" /><span>Canva</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Pixelmator Pro"><img src="assets/images/icons/pixelmator.svg" alt="Pixelmator Pro" style="width:26px; height:26px; border-radius:5px;" /><span>Pixelmator Pro</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Google Antigravity"><img src="assets/images/icons/antigravity.svg" alt="Antigravity" style="width:26px; height:26px; border-radius:5px;" /><span>Antigravity</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="ChatGPT"><img src="assets/images/icons/chatgpt.svg" alt="ChatGPT" style="width:26px; height:26px; border-radius:5px;" /><span>ChatGPT</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Claude"><img src="assets/images/icons/claude.svg" alt="Claude" style="width:26px; height:26px; border-radius:5px;" /><span>Claude</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="WordPress"><img src="assets/images/icons/wordpress.svg" alt="WordPress" style="width:26px; height:26px; border-radius:5px;" /><span>WordPress</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Wix Studio"><img src="assets/images/icons/wix.svg" alt="Wix" style="width:26px; height:26px; border-radius:5px;" /><span>Wix</span></div>
+                <div class="arsenal-logo-pill magnetic-target" title="Python"><img src="assets/images/icons/python.svg" alt="Python" style="width:26px; height:26px; border-radius:5px;" /><span>Python</span></div>
+              </div>
+
+              <div class="tools-category-grid">
+                <!-- 1. Cinema & Video Editing -->
+                <div class="tool-category-card ac-ornament-card">
+                  <div class="tool-cat-title" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-family: var(--font-display); color: var(--accent-gold);">Video &amp; Motion Cinema</span>
+                    <span style="font-size:0.68rem; color:var(--accent-cyan); font-weight:normal;">4 ENGINES</span>
+                  </div>
+                  <div class="tool-badges-list">
+                    <span class="tool-badge" style="border-color: rgba(212,175,55,0.4);"><img src="assets/images/icons/after-effects.svg" alt="After Effects" class="tool-badge-logo" /><strong style="color:var(--accent-gold-bright);">After Effects</strong> • VFX &amp; Motion</span>
+                    <span class="tool-badge" style="border-color: rgba(212,175,55,0.4);"><img src="assets/images/icons/premiere.svg" alt="Premiere Pro" class="tool-badge-logo" /><strong style="color:var(--accent-gold-bright);">Premiere Pro</strong> • Commercial Edit</span>
+                    <span class="tool-badge" style="border-color: rgba(0,240,255,0.4);"><img src="assets/images/icons/davinci.svg" alt="DaVinci Resolve" class="tool-badge-logo" /><strong style="color:var(--accent-cyan);">DaVinci Resolve</strong> • Color Grading</span>
+                    <span class="tool-badge" style="border-color: rgba(200,29,37,0.4);"><img src="assets/images/icons/fcp.svg" alt="Final Cut Pro" class="tool-badge-logo" /><strong style="color:var(--accent-crimson);">Final Cut Pro (FCP)</strong> • 4K Magnetic</span>
+                  </div>
+                </div>
+
+                <!-- 2. Graphic Design Suite -->
+                <div class="tool-category-card ac-ornament-card">
+                  <div class="tool-cat-title" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-family: var(--font-display); color: var(--accent-gold);">Graphic Design Suite</span>
+                    <span style="font-size:0.68rem; color:var(--accent-cyan); font-weight:normal;">4 SUITES</span>
+                  </div>
+                  <div class="tool-badges-list">
+                    <span class="tool-badge" style="border-color: rgba(255,154,0,0.4);"><img src="assets/images/icons/illustrator.svg" alt="Illustrator" class="tool-badge-logo" /><strong style="color:#ff9a00;">Illustrator</strong> • Vector &amp; Print</span>
+                    <span class="tool-badge" style="border-color: rgba(49,168,255,0.4);"><img src="assets/images/icons/photoshop.svg" alt="Photoshop" class="tool-badge-logo" /><strong style="color:#31a8ff;">Photoshop</strong> • Composite &amp; Retouch</span>
+                    <span class="tool-badge" style="border-color: rgba(0,196,204,0.4);"><img src="assets/images/icons/canva.svg" alt="Canva" class="tool-badge-logo" /><strong style="color:#00c4cc;">Canva</strong> • Social &amp; Ads</span>
+                    <span class="tool-badge" style="border-color: rgba(255,112,166,0.4);"><img src="assets/images/icons/pixelmator.svg" alt="Pixelmator Pro" class="tool-badge-logo" /><strong style="color:#ff70a6;">Pixelmator Pro</strong> • Mac Visual Art</span>
+                  </div>
+                </div>
+
+                <!-- 3. Advanced AI & Agentic Systems -->
+                <div class="tool-category-card ac-ornament-card">
+                  <div class="tool-cat-title" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-family: var(--font-display); color: var(--accent-gold);">AI &amp; Agentic Systems</span>
+                    <span style="font-size:0.68rem; color:var(--accent-cyan); font-weight:normal;">3 AI CORES</span>
+                  </div>
+                  <div class="tool-badges-list">
+                    <span class="tool-badge" style="border-color: rgba(0,240,255,0.4);"><img src="assets/images/icons/antigravity.svg" alt="Antigravity" class="tool-badge-logo" /><strong style="color:var(--accent-cyan);">Antigravity</strong> • Agentic Workflows</span>
+                    <span class="tool-badge" style="border-color: rgba(16,163,127,0.4);"><img src="assets/images/icons/chatgpt.svg" alt="ChatGPT" class="tool-badge-logo" /><strong style="color:#10a37f;">ChatGPT</strong> • Prompt &amp; Strategy</span>
+                    <span class="tool-badge" style="border-color: rgba(217,119,6,0.4);"><img src="assets/images/icons/claude.svg" alt="Claude" class="tool-badge-logo" /><strong style="color:#d97706;">Claude</strong> • Reasoning &amp; Copy</span>
+                  </div>
+                </div>
+
+                <!-- 4. CMS, Web & Automation -->
+                <div class="tool-category-card ac-ornament-card">
+                  <div class="tool-cat-title" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-family: var(--font-display); color: var(--accent-gold);">CMS, Web &amp; Automation</span>
+                    <span style="font-size:0.68rem; color:var(--accent-cyan); font-weight:normal;">3 PLATFORMS</span>
+                  </div>
+                  <div class="tool-badges-list">
+                    <span class="tool-badge" style="border-color: rgba(33,117,155,0.4);"><img src="assets/images/icons/wordpress.svg" alt="WordPress" class="tool-badge-logo" /><strong style="color:#21759b;">WordPress</strong> • CMS &amp; Portals</span>
+                    <span class="tool-badge" style="border-color: rgba(250,173,20,0.4);"><img src="assets/images/icons/wix.svg" alt="Wix" class="tool-badge-logo" /><strong style="color:#faad14;">Wix</strong> • Modern Responsive Web</span>
+                    <span class="tool-badge" style="border-color: rgba(55,118,171,0.4);"><img src="assets/images/icons/python.svg" alt="Python" class="tool-badge-logo" /><strong style="color:#3776ab;">Python</strong> • Scrapers &amp; Automation</span>
+                    <span class="tool-badge" style="border-color: rgba(212,175,55,0.5);"><strong style="color:var(--accent-gold-bright);">podiyo.in (Fashion)</strong> &amp; <strong style="color:var(--accent-cyan);">keralaalert.in (News)</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. SERVICES & CLIENT CAPABILITIES
+         ====================================================================== -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag">◈ Guild Contracts &amp; Capabilities</div>
+          <h2 class="section-title">STRATEGIC DISCIPLINES &amp; GROWTH CODEX</h2>
+          <p class="section-subtitle">Turnkey creative direction, high-velocity Meta ad campaigns, and sovereign digital architecture forged for modern brands and visionaries.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Meta Ads & Paid Social -->
+          <div class="service-card ac-ornament-card" data-reveal data-delay="100">
+            <div class="service-card-top">
+              <span class="service-num">01 //</span>
+              <div class="service-icon-box" style="background: rgba(212, 175, 55, 0.15); border-color: var(--accent-gold);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold-bright)" stroke-width="2">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <h3>Meta Ads &amp; Paid Social Growth</h3>
+              <p>End-to-end Meta ad campaign management: sub-3-second UGC hook videos, 3D kinetic product ads, and editorial carousels scaled from ₹15,000 test budgets to 4.8x+ ROAS.</p>
+              <div class="service-deliverables">
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Converting 9:16 Reel &amp; Story Ads</div>
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Audience Targeting &amp; Retargeting Funnels</div>
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Weekly ROAS &amp; Conversion Analytics</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Graphic Design Suite -->
+          <div class="service-card ac-ornament-card" data-reveal data-delay="150">
+            <div class="service-card-top">
+              <span class="service-num">02 //</span>
+              <div class="service-icon-box" style="background: rgba(212, 175, 55, 0.15); border-color: var(--accent-gold);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold-bright)" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <h3>Graphic Design (Illustrator, Photoshop, Canva, Pixelmator)</h3>
+              <p>Complete visual branding, executive certificates, high-end commercial photo retouching, stationery packs, brochures, and viral social ad sets across Adobe Illustrator, Photoshop, Canva, and Pixelmator Pro.</p>
+              <div class="service-deliverables">
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Resolution Print CMYK Vector &amp; Foil Specs</div>
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Social Media Post, Story &amp; Carousel Design Systems</div>
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Editable Illustrator, PSD, Canva &amp; Pixelmator Templates</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Web Ecosystems, CMS & Python Automation -->
+          <div class="service-card ac-ornament-card" data-reveal data-delay="200">
+            <div class="service-card-top">
+              <span class="service-num">03 //</span>
+              <div class="service-icon-box" style="background: rgba(0, 240, 255, 0.15); border-color: var(--accent-cyan);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <h3>CMS &amp; Web Platforms (WordPress, Wix, Python Automation)</h3>
+              <p>Turnkey web systems, customized WordPress CMS architecture, modern Wix Studio client portals, and bespoke Python scrapers and automated lead engines (built on the experience of scaling Podiyo.in and KeralaAlert.in).</p>
+              <div class="service-deliverables">
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom WordPress CMS &amp; Wix Studio Deployments</div>
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Python Scrapers, Webhooks &amp; Telegram Push Bots</div>
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Google Search &amp; Discover Technical SEO Architecture</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4: Cinema Post-Production & AI Video -->
+          <div class="service-card ac-ornament-card" data-reveal data-delay="250">
+            <div class="service-card-top">
+              <span class="service-num">04 //</span>
+              <div class="service-icon-box" style="background: rgba(200, 29, 37, 0.15); border-color: var(--accent-crimson);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2">
+                  <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <h3>Cinema Post-Production &amp; AI (AE, Premiere, DaVinci, FCP, Antigravity)</h3>
+              <p>Commercial video editing, Fairlight audio mastering, DaVinci Resolve color grading, Final Cut Pro 4K cutting, and neural AI video generation driven by Antigravity, ChatGPT, and Claude pipelines.</p>
+              <div class="service-deliverables">
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> DaVinci Resolve HDR Color Timing &amp; FCP 4K Masters</div>
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Premiere Pro &amp; After Effects Kinetic Motion VFX</div>
+                <div class="deliverable-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg> Antigravity, ChatGPT &amp; Claude AI Prompt Scripting</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. CONTACT SECTION
+         ====================================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left: Direct Contact Information -->
+          <div class="contact-info-col" data-reveal>
+            <div>
+              <div class="section-tag">◈ Transmit Coordinates // Initiate Alliance</div>
+              <h2 class="contact-headline">
+                READY TO FORGE YOUR ASCENT?<br />
+                <span>LET’S CONJURE SOMETHING</span><br />
+                UNFORGETTABLE.
+              </h2>
+
+              <p class="contact-subtitle">
+                Summon strategic counsel for high-ROAS Meta Ad campaigns, bespoke web platforms, cinematic post-production, or complete visual suite mastery.
+              </p>
+
+              <div class="contact-direct-links">
+                <!-- Direct Email Card -->
+                <div class="contact-email-card ac-ornament-card magnetic-target" data-email="adithang46@gmail.com" title="Click to copy email address" style="border-color: rgba(212,175,55,0.4);">
+                  <div class="email-label-group">
+                    <span class="email-title" style="color: var(--accent-gold-bright);">◈ DIRECT TRANSMISSION (EMAIL)</span>
+                    <a href="mailto:adithang46@gmail.com" class="email-address" style="text-decoration:none; color: var(--text-primary);">adithang46@gmail.com</a>
+                  </div>
+                  <span class="copy-badge" style="border-color: var(--accent-gold); color: var(--accent-gold-bright);">CLICK TO COPY</span>
+                </div>
+
+                <!-- Direct Phone & WhatsApp Card -->
+                <div class="contact-phone-card contact-email-card ac-ornament-card magnetic-target" data-phone="9495714546" title="Click to call or copy phone number" style="border-color: rgba(0, 240, 255, 0.4);">
+                  <div class="email-label-group">
+                    <span class="email-title" style="color: var(--accent-cyan);">◈ VOICE // ENCRYPTED WHATSAPP</span>
+                    <a href="tel:+919495714546" class="email-address" style="text-decoration:none; color: var(--accent-cyan);">+91 94957 14546</a>
+                  </div>
+                  <div style="display:flex; gap:0.5rem; align-items:center;">
+                    <a href="https://wa.me/919495714546?text=Hi%20AdithKrishna,%20I%20saw%20your%20portfolio" target="_blank" rel="noopener noreferrer" style="font-family:var(--font-mono); font-size:0.72rem; background:rgba(0,240,255,0.12); color:var(--accent-cyan); border:1px solid rgba(0,240,255,0.3); padding:0.3rem 0.65rem; border-radius:var(--radius-sm); text-decoration:none;">
+                      WHATSAPP
+                    </a>
+                    <span class="copy-badge phone-copy-badge" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">COPY</span>
+                  </div>
+                </div>
+
+                <!-- Direct Instagram Card -->
+                <div class="contact-email-card ac-ornament-card magnetic-target" style="border-color: rgba(225, 48, 108, 0.4);">
+                  <div class="email-label-group">
+                    <span class="email-title" style="color: #f77737;">◈ INSTAGRAM // OFFICIAL DISPATCH</span>
+                    <a href="https://www.instagram.com/_adith__krishna_?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="email-address" style="text-decoration:none; color: var(--text-primary);">@_adith__krishna_</a>
+                  </div>
+                  <a href="https://www.instagram.com/_adith__krishna_?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="copy-badge" style="border-color: #f77737; color: #f77737; text-decoration: none;">VISIT PROFILE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timezone & Live Status Widget -->
+            <div class="contact-meta-card ac-ornament-card">
+              <div class="meta-widget-item">
+                <span class="widget-label">CODEX STATUS</span>
+                <span class="widget-val" style="color: var(--accent-gold-bright);">◈ ALLIANCE CHAMBER OPEN</span>
+              </div>
+              <div class="meta-widget-item">
+                <span class="widget-label">DIRECT LINE</span>
+                <span class="widget-val">+91 9495714546</span>
+              </div>
+              <div class="meta-widget-item">
+                <span class="widget-label">SOVEREIGN REALMS</span>
+                <span class="widget-val">podiyo.in ◈ keralaalert.in</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Project Inquiry Form -->
+          <div class="contact-form-card ac-ornament-card" data-reveal data-delay="100">
+            <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--accent-gold-bright); margin-bottom: 0.5rem; letter-spacing: 0.05em;">◈ INITIATE DISPATCH</h3>
+            <p style="font-family: var(--font-classical); color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1.5rem;">Select your strategic scope and transmit your objectives directly to AdithKrishna S.</p>
+
+            <form id="inquiry-form">
+              <label class="form-label" style="font-family: var(--font-display); color: var(--accent-gold); font-size: 0.8rem; letter-spacing: 0.1em;">STRATEGIC SCOPE / OBJECTIVES</label>
+              <div class="project-types-selector">
+                <span class="type-chip selected">Meta Ads &amp; High-ROAS</span>
+                <span class="type-chip">Web Platforms (like Podiyo)</span>
+                <span class="type-chip">Illustrator &amp; Photoshop Design</span>
+                <span class="type-chip">Canva Social Creatives</span>
+                <span class="type-chip">AI Video Cinema</span>
+                <span class="type-chip">SEO &amp; Traffic Growth</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="client-name" style="font-family: var(--font-display); color: var(--accent-gold); font-size: 0.8rem; letter-spacing: 0.1em;">Your Name / Organization</label>
+                <input type="text" id="client-name" class="form-input" placeholder="e.g. Rahul Menon / Growth Ventures" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="client-email" style="font-family: var(--font-display); color: var(--accent-gold); font-size: 0.8rem; letter-spacing: 0.1em;">Transmission Address (Email)</label>
+                <input type="email" id="client-email" class="form-input" placeholder="rahul@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="project-brief" style="font-family: var(--font-display); color: var(--accent-gold); font-size: 0.8rem; letter-spacing: 0.1em;">Campaign Objective &amp; Ad Budget</label>
+                <textarea id="project-brief" class="form-textarea" placeholder="Describe your marketing goals, ad budget (e.g. ₹15,000 test spend), or design requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary form-submit-btn magnetic-target">
+                <span>Dispatch Transmission to AdithKrishna</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="nav-brand magnetic-target">
+          <div class="brand-monogram">AS</div>
+          <span style="font-family: var(--font-display); letter-spacing: 0.15em;">ADITHKRISHNA S. ◈ DIGITAL ARCHITECT</span>
+        </a>
+
+        <!-- Social Links Grid -->
+        <div class="footer-social-links">
+          <a href="mailto:adithang46@gmail.com" class="social-pill-link magnetic-target" style="border-color: rgba(212,175,55,0.4); color: var(--accent-gold-bright);">adithang46@gmail.com</a>
+          <a href="tel:+919495714546" class="social-pill-link magnetic-target" style="border-color: rgba(0,240,255,0.4); color: var(--accent-cyan);">+91 94957 14546</a>
+          <a href="https://podiyo.in" target="_blank" rel="noopener noreferrer" class="social-pill-link magnetic-target" style="border-color: rgba(212,175,55,0.4); color: var(--accent-gold);">podiyo.in</a>
+          <a href="https://keralaalert.in" target="_blank" rel="noopener noreferrer" class="social-pill-link magnetic-target" style="border-color: rgba(0,240,255,0.4); color: var(--accent-cyan);">keralaalert.in</a>
+          <a href="https://www.instagram.com/_adith__krishna_?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="social-pill-link magnetic-target" style="border-color: rgba(225, 48, 108, 0.4); color: #f77737;">Instagram (@_adith__krishna_)</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill-link magnetic-target">LinkedIn</a>
+        </div>
+
+        <a href="#hero" class="back-to-top-btn magnetic-target">
+          <span>SUMMIT ASCENT</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ADITHKRISHNA S. ◈ ALL RIGHTS RESERVED.</div>
+        <div>TEL: +91 94957 14546 ◈ EMAIL: ADITHANG46@GMAIL.COM</div>
+        <div>PUBLISHED VIA GITHUB PAGES ◈ ZERO-DEPENDENCY STATIC DEPLOYMENT</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       PROJECT DETAIL MODAL (CASE STUDY DEEP DIVE)
+       ======================================================================== -->
+  <div class="project-modal" role="dialog" aria-modal="true" aria-label="Project Details">
+    <div class="modal-backdrop"></div>
+    <div class="modal-window">
+      <!-- Close Button -->
+      <button class="modal-close-btn" aria-label="Close Project Modal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Media Preview Wrap -->
+      <div class="modal-hero-media-wrap"></div>
+
+      <div class="modal-body">
+        <div class="modal-header-meta">
+          <span class="item-badge modal-category-badge">CATEGORY</span>
+        </div>
+
+        <h2 class="modal-title">Project Title</h2>
+        <p class="modal-subtitle">Project Tagline</p>
+
+        <!-- Project Metadata Grid -->
+        <div class="modal-meta-grid"></div>
+
+        <!-- Narrative Section: Challenge, Solution, Outcome -->
+        <div class="modal-narrative-section"></div>
+
+        <!-- Detail Gallery Thumbnails -->
+        <h4 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 1rem; color: #fff;">CASE STUDY VISUAL ARTIFACTS</h4>
+        <div class="modal-gallery-row"></div>
+
+        <!-- Modal Prev / Next Switcher -->
+        <div class="modal-footer-nav">
+          <button class="modal-nav-btn modal-nav-prev">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span>PREVIOUS PROJECT</span>
+          </button>
+
+          <button class="modal-nav-btn modal-nav-next">
+            <span>NEXT PROJECT</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       ADMIN STUDIO MODAL (INLINE DASHBOARD)
+       ======================================================================== -->
+  <div id="admin-modal" class="admin-modal" role="dialog" aria-modal="true" aria-label="Portfolio Admin Studio">
+    <div class="admin-backdrop"></div>
+    <div class="admin-window">
+      <!-- Lock Screen -->
+      <div class="admin-lock-screen">
+        <div class="lock-glyph">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <h2 class="admin-lock-title">PORTFOLIO ADMIN STUDIO</h2>
+        <p class="admin-lock-subtitle">Enter your creator passcode to manage your projects, add new creative works, and export GitHub Pages code.</p>
+
+        <div class="pin-input-group">
+          <input type="password" id="admin-pin-input" class="form-input pin-input" placeholder="••••" maxlength="10" />
+          <button id="admin-pin-submit" class="btn-primary" style="padding: 0.9rem 1.5rem;">UNLOCK</button>
+        </div>
+        <div class="admin-pin-error">Incorrect Passcode. Default is 1234</div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">DEFAULT PIN: 1234 (OR 'ADITH')</div>
+        <button class="btn-secondary admin-close-btn-alt" onclick="window.adminPanel.close();" style="margin-top:1rem; font-size:0.8rem;">
+          Return to Portfolio
+        </button>
+      </div>
+
+      <!-- Main Dashboard Content (Hidden until unlocked) -->
+      <div class="admin-main-content" style="display: none;">
+        <!-- Top Bar -->
+        <div class="admin-top-bar">
+          <div class="admin-brand-title">
+            <span>Portfolio Project Manager</span>
+            <span class="admin-brand-badge">LIVE LOCALSTORAGE SYNC</span>
+          </div>
+          <div style="display:flex; align-items:center; gap: 1rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-secondary);">
+              Logged in: <strong>AdithKrishna S.</strong>
+            </div>
+            <button class="admin-close-btn" aria-label="Close Admin Modal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="admin-tabs-nav">
+          <button class="admin-tab-btn active" data-tab="list">Project Inventory</button>
+          <button class="admin-tab-btn" data-tab="add">Add / Edit Project</button>
+          <button class="admin-tab-btn" data-tab="music">Music &amp; Ambience</button>
+          <button class="admin-tab-btn" data-tab="export">Export to GitHub Pages</button>
+        </div>
+
+        <!-- Tab 1: Project Inventory -->
+        <div id="tab-list" class="admin-tab-pane active">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 1.5rem; flex-wrap:wrap; gap:1rem;">
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Manage existing projects, update client case studies, or delete outdated items.</p>
+            <button class="btn-primary" onclick="window.adminPanel.resetForm(); window.adminPanel.switchTab('add');" style="padding:0.6rem 1.2rem; font-size:0.8rem;">
+              + Add New Project
+            </button>
+          </div>
+          <div class="admin-project-list"></div>
+        </div>
+
+        <!-- Tab 2: Add / Edit Project Form -->
+        <div id="tab-add" class="admin-tab-pane">
+          <h3 id="form-header-title" style="font-family: var(--font-display); font-size: 1.5rem; color: #fff; margin-bottom: 1.5rem;">Add New Creative Project</h3>
+
+          <form id="admin-project-form">
+            <div class="admin-form-grid">
+              <div class="form-group">
+                <label class="form-label" for="proj-id">Unique Slug / ID *</label>
+                <input type="text" id="proj-id" class="form-input" placeholder="e.g. meta-ad-15k-campaign" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-title">Project Title *</label>
+                <input type="text" id="proj-title" class="form-input" placeholder="e.g. META ADS // ₹15,000 Ad Spend Campaign" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-category">Category *</label>
+                <select id="proj-category" class="form-input" style="background:#141724; cursor:pointer;" required>
+                  <option value="graphic-design">Graphic Design &amp; Branding / Ads</option>
+                  <option value="websites">Websites &amp; Platforms (Podiyo/KeralaAlert)</option>
+                  <option value="reels">Cinema &amp; Reels</option>
+                  <option value="posters">Editorial Posters &amp; Certificates</option>
+                  <option value="brochures">Print &amp; Stationery</option>
+                  <option value="ai-videos">AI Generative &amp; Cinema</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-category-name">Category Display Label *</label>
+                <input type="text" id="proj-category-name" class="form-input" placeholder="e.g. Meta Ads &amp; Paid Social" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-client">Client / Brand</label>
+                <input type="text" id="proj-client" class="form-input" placeholder="e.g. D2C Velocity Brands" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-year">Year</label>
+                <input type="text" id="proj-year" class="form-input" placeholder="2026" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-role">Your Role</label>
+                <input type="text" id="proj-role" class="form-input" placeholder="e.g. Creative Strategist &amp; Ad Designer" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-budget">Budget / Spend / Metrics</label>
+                <input type="text" id="proj-budget" class="form-input" placeholder="e.g. ₹15,000 Spend • 4.8x ROAS" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-duration">Duration (If Video)</label>
+                <input type="text" id="proj-duration" class="form-input" placeholder="e.g. 00:30 or 01:15" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-grid-span">Masonry Grid Width</label>
+                <select id="proj-grid-span" class="form-input" style="background:#141724;">
+                  <option value="col-span-8">Wide (Span 8 Columns)</option>
+                  <option value="col-span-6">Medium (Span 6 Columns)</option>
+                  <option value="col-span-4">Narrow (Span 4 Columns)</option>
+                  <option value="col-span-12">Full Width (Span 12 Columns)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-aspect">Media Aspect Ratio</label>
+                <select id="proj-aspect" class="form-input" style="background:#141724;">
+                  <option value="aspect-wide">Landscape (16:9 / 16:10)</option>
+                  <option value="aspect-tall">Tall Editorial (9:13)</option>
+                  <option value="aspect-reel">Vertical Reel (9:16)</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="display:flex; align-items:center; gap:0.75rem; margin-top:1.8rem;">
+                <input type="checkbox" id="proj-showcase" style="width:20px; height:20px; cursor:pointer;" />
+                <label for="proj-showcase" style="font-family: var(--font-mono); font-size:0.85rem; color:#fff; cursor:pointer;">
+                  Feature in Cinema &amp; Reels Horizontal Showcase
+                </label>
+              </div>
+
+              <div class="form-group admin-form-full">
+                <label class="form-label" for="proj-tagline">Hook / Tagline *</label>
+                <input type="text" id="proj-tagline" class="form-input" placeholder="High-impact one-sentence summary for gallery cards" required />
+              </div>
+
+              <div class="form-group admin-form-full">
+                <label class="form-label" for="proj-desc">Full Project Narrative / Overview *</label>
+                <textarea id="proj-desc" class="form-textarea" placeholder="Comprehensive project context, creative vision, and execution story..." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-challenge">01 / The Challenge *</label>
+                <textarea id="proj-challenge" class="form-textarea" placeholder="What core problem or brief were you tackling?" required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-solution">02 / The Creative Solution *</label>
+                <textarea id="proj-solution" class="form-textarea" placeholder="How did you solve it through design, motion, or AI?" required></textarea>
+              </div>
+
+              <div class="form-group admin-form-full">
+                <label class="form-label" for="proj-outcome">03 / Outcome &amp; Impact *</label>
+                <textarea id="proj-outcome" class="form-textarea" placeholder="Key metrics, revenue generated, client reception, awards won..." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-tools">Tools &amp; Software (Comma separated)</label>
+                <input type="text" id="proj-tools" class="form-input" placeholder="e.g. After Effects, DaVinci Resolve, FCP, Illustrator, Photoshop, Canva, Python, WordPress" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-tags">Hashtags / Tags (Comma separated)</label>
+                <input type="text" id="proj-tags" class="form-input" placeholder="e.g. Meta Ads, ₹15000 Budget, ROAS 4.8x" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-cover">Cover Image URL / Path *</label>
+                <input type="text" id="proj-cover" class="form-input" placeholder="e.g. assets/my-projects/graphics/Gold-and-Black-Modern-Participation-Certificate-1536x1086.png.webp" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-gallery">Gallery Media URLs (Comma separated)</label>
+                <input type="text" id="proj-gallery" class="form-input" placeholder="e.g. assets/my-projects/graphics/PHOTO-2026-06-15-20-23-15.jpg.webp" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-video-src">Video Media URL / File Path (Optional)</label>
+                <input type="text" id="proj-video-src" class="form-input" placeholder="e.g. assets/my-projects/ai/snapgram.io_395925162369.MP4" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="proj-live-url">Live Platform / Website Link (Optional)</label>
+                <input type="text" id="proj-live-url" class="form-input" placeholder="e.g. https://podiyo.in" />
+              </div>
+            </div>
+
+            <div style="display:flex; gap:1rem; margin-top:2rem;">
+              <button type="submit" class="btn-primary">
+                <span id="form-submit-btn-text">Publish Project to Portfolio</span>
+              </button>
+              <button type="button" class="btn-secondary" onclick="window.adminPanel.resetForm(); window.adminPanel.switchTab('list');">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tab 3: Music & Ambience -->
+        <div id="tab-music" class="admin-tab-pane">
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: #fff; margin-bottom: 0.5rem; letter-spacing: 0.05em;">
+              ◈ Portfolio Music &amp; Ambient Soundscape
+            </h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">
+              Change or customize the ambient music soundtrack playing across your live portfolio. You can upload an audio file from your device, choose from presets, specify a custom URL or file path, and fine-tune playback volume.
+            </p>
+          </div>
+
+          <div class="admin-music-grid" style="display:grid; grid-template-columns: 1.15fr 0.85fr; gap: 2rem; margin-bottom: 2rem;">
+            <!-- Left: Music Configuration Form -->
+            <div class="ac-ornament-card" style="background: rgba(13, 14, 20, 0.7); border: 1px solid rgba(212,175,55,0.3); padding: 1.5rem; border-radius: var(--radius-md);">
+              <h4 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--accent-gold-bright); margin-bottom: 1.2rem;">
+                ◈ Select or Upload Music Track
+              </h4>
+
+              <!-- Quick Presets -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label class="form-label" style="color: var(--text-primary); font-size:0.85rem;">One-Click Presets</label>
+                <div style="display:flex; flex-direction:column; gap:0.5rem; margin-top:0.5rem;">
+                  <button type="button" class="btn-secondary music-preset-btn" data-url="assets/audio/kungfu-vintage-theme.mp3" data-title="◈ KUNG FU AMBIENCE" style="text-align:left; justify-content:flex-start; padding:0.6rem 1rem; font-size:0.85rem;">
+                    🎵 <strong>Current Vintage Kung Fu Tune</strong> &nbsp;<span style="color:var(--text-muted); font-size:0.75rem;">(assets/audio/kungfu-vintage-theme.mp3)</span>
+                  </button>
+                  <button type="button" class="btn-secondary music-preset-btn" data-url="assets/audio/portfolio-tune.mp3" data-title="◈ CINEMATIC AMBIENCE" style="text-align:left; justify-content:flex-start; padding:0.6rem 1rem; font-size:0.85rem;">
+                    🎼 <strong>Studio Alternate Track</strong> &nbsp;<span style="color:var(--text-muted); font-size:0.75rem;">(assets/audio/portfolio-tune.mp3)</span>
+                  </button>
+                  <button type="button" class="btn-secondary music-preset-btn" data-url="procedural" data-title="◈ PROCEDURAL GUQIN &amp; FLUTE" style="text-align:left; justify-content:flex-start; padding:0.6rem 1rem; font-size:0.85rem;">
+                    🪈 <strong>Procedural Synthesizer</strong> &nbsp;<span style="color:var(--text-muted); font-size:0.75rem;">(Zero file dependency - Live Web Audio API)</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Option 1: Upload from Device -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label class="form-label" for="admin-music-file" style="color: var(--text-primary); font-size:0.85rem;">
+                  Option A: Upload New Audio File (.mp3, .wav, .m4a, .ogg)
+                </label>
+                <input type="file" id="admin-music-file" accept="audio/*" class="form-input" style="padding:0.6rem; cursor:pointer;" />
+                <div id="music-file-status" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-gold); display:none; margin-top:0.35rem;"></div>
+              </div>
+
+              <!-- Option 2: Custom URL or File Path -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label class="form-label" for="admin-music-url" style="color: var(--text-primary); font-size:0.85rem;">
+                  Option B: Custom Audio Path or Web URL
+                </label>
+                <input type="text" id="admin-music-url" class="form-input" placeholder="assets/audio/kungfu-vintage-theme.mp3 or https://..." value="assets/audio/kungfu-vintage-theme.mp3" />
+                <small style="color:var(--text-muted); font-size:0.75rem;">Local repo path or external HTTPS streaming audio link.</small>
+              </div>
+
+              <!-- Navigation Button Label -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label class="form-label" for="admin-music-title" style="color: var(--text-primary); font-size:0.85rem;">
+                  Navbar Button Display Label
+                </label>
+                <input type="text" id="admin-music-title" class="form-input" placeholder="◈ KUNG FU AMBIENCE" value="◈ KUNG FU AMBIENCE" />
+              </div>
+
+              <!-- Volume Slider -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+                  <label class="form-label" for="admin-music-vol" style="margin-bottom:0; color: var(--text-primary); font-size:0.85rem;">Master Background Volume</label>
+                  <span id="admin-music-vol-val" style="font-family:var(--font-mono); font-size:0.85rem; color:var(--accent-gold-bright);">20%</span>
+                </div>
+                <input type="range" id="admin-music-vol" min="0.05" max="0.80" step="0.01" value="0.20" style="width:100%; accent-color:var(--accent-gold); cursor:pointer;" />
+                <div style="display:flex; justify-content:space-between; font-size:0.7rem; color:var(--text-muted); margin-top:0.25rem;">
+                  <span>Subtle (5%)</span>
+                  <span style="color:var(--accent-gold);">Recommended (20%)</span>
+                  <span>Prominent (80%)</span>
+                </div>
+              </div>
+
+              <!-- Save Actions -->
+              <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem;">
+                <button type="button" id="admin-save-music-btn" class="btn-primary" style="padding:0.75rem 1.6rem;">
+                  Save &amp; Apply Live Soundtrack
+                </button>
+                <button type="button" id="admin-reset-music-btn" class="btn-secondary" style="padding:0.75rem 1.2rem;">
+                  Restore Default Track
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Real-time Live Audio Monitor & Testing Station -->
+            <div class="ac-ornament-card" style="background: rgba(13, 14, 20, 0.7); border: 1px solid rgba(0,240,255,0.3); padding: 1.5rem; border-radius: var(--radius-md); display:flex; flex-direction:column; justify-content:space-between;">
+              <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                  <h4 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--accent-cyan); margin:0;">
+                    ◈ Live Audio Monitor
+                  </h4>
+                  <span id="music-monitor-badge" style="font-family:var(--font-mono); font-size:0.72rem; padding:0.25rem 0.6rem; border-radius:var(--radius-sm); background:rgba(0,240,255,0.12); color:var(--accent-cyan); border:1px solid rgba(0,240,255,0.3);">
+                    READY
+                  </span>
+                </div>
+
+                <div style="background:#06070a; border:1px solid #1a1e2e; border-radius:var(--radius-sm); padding:1rem; margin-bottom:1.5rem;">
+                  <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.3rem;">CURRENT ACTIVE TRACK</div>
+                  <div id="music-monitor-title" style="font-family:var(--font-display); font-size:1rem; color:#fff; margin-bottom:0.5rem;">◈ KUNG FU AMBIENCE</div>
+                  <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.2rem;">SOURCE PATH / MODE</div>
+                  <div id="music-monitor-src" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-gold-bright); word-break:break-all;">assets/audio/kungfu-vintage-theme.mp3</div>
+                </div>
+
+                <!-- Test Audio Player Controls -->
+                <div style="margin-bottom:1.5rem;">
+                  <button type="button" id="admin-test-play-btn" class="btn-primary" style="width:100%; justify-content:center; gap:0.6rem; padding:0.85rem; font-size:0.9rem;">
+                    <span id="test-play-icon">▶</span>
+                    <span id="test-play-label">Preview / Test Music</span>
+                  </button>
+                </div>
+
+                <!-- Instructions For GitHub Pages -->
+                <div style="background:rgba(212,175,55,0.06); border-left:3px solid var(--accent-gold); padding:0.9rem 1rem; border-radius:0 var(--radius-sm) var(--radius-sm) 0; font-size:0.8rem; line-height:1.5; color:var(--text-secondary);">
+                  <strong style="color:var(--accent-gold-bright); display:block; margin-bottom:0.3rem;">💡 GitHub Pages Deployment</strong>
+                  To deploy changes permanently for all visitors worldwide:
+                  <ul style="margin:0.4rem 0 0 1.2rem; padding:0;">
+                    <li>Replace <code>assets/audio/kungfu-vintage-theme.mp3</code> in your repo with your new MP3 file.</li>
+                    <li>Or set an online HTTPS link in Option B.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="music-toast-message" style="display:none; margin-top:1rem; padding:0.75rem 1rem; border-radius:var(--radius-sm); font-size:0.85rem; font-family:var(--font-mono); text-align:center;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Export to GitHub Pages -->
+        <div id="tab-export" class="admin-tab-pane">
+          <div style="margin-bottom: 1.5rem;">
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: #fff; margin-bottom: 0.5rem;">Export to GitHub Pages</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">
+              Changes made in this Admin Panel are saved in your browser's <code>localStorage</code> immediately. To make them permanently available to all visitors worldwide on GitHub Pages, download the updated file below and replace <code>js/projects-data.js</code> in your GitHub repo!
+            </p>
+          </div>
+
+          <div style="display:flex; gap:1rem; margin-bottom: 1.5rem; flex-wrap:wrap;">
+            <button id="admin-download-code-btn" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Updated projects-data.js</span>
+            </button>
+
+            <button id="admin-copy-code-btn" class="btn-secondary">
+              <span>Copy Dataset Code</span>
+            </button>
+
+            <label class="btn-secondary" style="cursor:pointer;">
+              <span>Import JSON File</span>
+              <input type="file" id="admin-import-file" accept=".json,.js" style="display:none;" />
+            </label>
+
+            <button id="admin-reset-btn" class="btn-secondary" style="color:var(--accent-coral); border-color:rgba(255,67,101,0.3);">
+              <span>Reset to Defaults</span>
+            </button>
+          </div>
+
+          <textarea id="admin-export-code" class="admin-export-textarea" readonly></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/sound.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/canvas-hero.js"></script>
+  <script src="js/scroll-journey.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

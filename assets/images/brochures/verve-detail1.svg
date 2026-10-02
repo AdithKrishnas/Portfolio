@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <rect width="1000" height="700" fill="#120e0b"/>
+  <rect x="120" y="80" width="360" height="520" fill="#1c1611"/>
+  <rect x="520" y="80" width="360" height="520" fill="#1c1611"/>
+  <text x="160" y="160" fill="#d4af37" font-family="'Syne', sans-serif" font-size="28" font-weight="800">SILK &amp; VELLUM</text>
+  <text x="160" y="210" fill="#9ea3b5" font-family="'Plus Jakarta Sans', sans-serif" font-size="14">Layered translucent pages revealing underlying typography</text>
+  <text x="50" y="50" fill="#d4af37" font-family="'Space Grotesk', monospace" font-size="12">VELLUM INTERLEAF DEMO</text>
+</svg>

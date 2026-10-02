@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <rect width="1000" height="700" fill="#080a10"/>
+  <rect x="50" y="50" width="900" height="600" rx="14" fill="#0f121c" stroke="rgba(255,255,255,0.1)"/>
+  
+  <text x="90" y="110" fill="#00d2ff" font-family="'Space Grotesk', monospace" font-size="16" font-weight="700">FUNNEL ARCHITECTURE &amp; AUDIENCE CONVERSIONS</text>
+
+  <!-- Funnel Visualization -->
+  <g transform="translate(90, 160)">
+    <polygon points="0,0 720,0 600,80 120,80" fill="#0064e0" opacity="0.8"/>
+    <text x="360" y="48" text-anchor="middle" fill="#ffffff" font-family="'Space Grotesk', monospace" font-weight="bold">TOP OF FUNNEL // 184,000 VIDEO IMPRESSIONS</text>
+
+    <polygon points="120,95 600,95 500,175 220,175" fill="#0081fb" opacity="0.85"/>
+    <text x="360" y="142" text-anchor="middle" fill="#ffffff" font-family="'Space Grotesk', monospace" font-weight="bold">MIDDLE OF FUNNEL // 7,060 HIGH-INTENT CLICKS (3.84% CTR)</text>
+
+    <polygon points="220,190 500,190 420,270 300,270" fill="#00d2ff" opacity="0.9"/>
+    <text x="360" y="238" text-anchor="middle" fill="#000000" font-family="'Space Grotesk', monospace" font-weight="bold">BOTTOM OF FUNNEL // 894 ADDS TO CART</text>
+
+    <polygon points="300,285 420,285 390,360 330,360" fill="#ccff00"/>
+    <text x="360" y="330" text-anchor="middle" fill="#000000" font-family="'Space Grotesk', monospace" font-weight="900">312 CONVERSIONS</text>
+  </g>
+
+  <text x="90" y="580" fill="#ffffff" font-family="'Space Grotesk', monospace" font-size="13">ACQUISITION COST: ₹48.07 CPA • AVERAGE ORDER VALUE: ₹231.73</text>
+  <text x="90" y="610" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="12">CAMPAIGN MANAGED &amp; PRODUCED BY ADITHKRISHNA S. (9495714546 • ADITHANG46@GMAIL.COM)</text>
+</svg>

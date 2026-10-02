@@ -1,0 +1,171 @@
+/* ==========================================================================
+   RESET & BASE VARIABLES
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ========================================================================
+     ASSASSIN'S CREED ANIMUS // CYBER-RENAISSANCE DESIGN SYSTEM
+     Vintage Antique Gold & Crimson + Futuristic Holographic Animus Cyan
+     ======================================================================== */
+  --bg-primary: #06070a;
+  --bg-secondary: #0b0d13;
+  --bg-tertiary: #11141e;
+  --bg-card: rgba(14, 18, 27, 0.82);
+  --bg-card-hover: rgba(20, 25, 38, 0.92);
+  --bg-glass: rgba(12, 15, 23, 0.75);
+  
+  /* Text: Ivory Parchment & Weathered Papyrus */
+  --text-primary: #f6f1e3;
+  --text-secondary: #c5beaa;
+  --text-muted: #7c7562;
+  
+  /* Antique Gold & Imperial Aurum */
+  --accent-gold: #d4af37;
+  --accent-gold-bright: #f5d77f;
+  --accent-gold-light: #fbf5e2;
+  --accent-gold-dim: rgba(212, 175, 55, 0.15);
+  --accent-gold-glow: rgba(212, 175, 55, 0.4);
+  
+  /* Futuristic Holographic Animus Cyan */
+  --accent-cyan: #00f0ff;
+  --accent-cyan-bright: #70f7ff;
+  --accent-cyan-dim: rgba(0, 240, 255, 0.15);
+  --accent-cyan-glow: rgba(0, 240, 255, 0.35);
+
+  /* Brotherhood Crimson / Assassin's Scarlet */
+  --accent-crimson: #c81d25;
+  --accent-crimson-bright: #ff3344;
+  --accent-crimson-glow: rgba(200, 29, 37, 0.45);
+
+  /* Compatible Mappings for Existing Components */
+  --accent-lime: #f5d77f; /* Seamlessly maps lime to radiant burnished gold */
+  --accent-coral: #c81d25;
+  --accent-violet: #8e44ff;
+
+  /* Gradients */
+  --grad-gold: linear-gradient(135deg, #f5d77f 0%, #d4af37 50%, #9e7d23 100%);
+  --grad-gold-cyan: linear-gradient(135deg, #d4af37 0%, #00f0ff 100%);
+  --grad-lime-cyan: linear-gradient(135deg, #f5d77f 0%, #00f0ff 100%);
+  --grad-crimson-gold: linear-gradient(135deg, #c81d25 0%, #d4af37 100%);
+  --grad-violet-coral: linear-gradient(135deg, #8e44ff 0%, #c81d25 100%);
+  --grad-dark-card: linear-gradient(180deg, rgba(16, 20, 30, 0.88) 0%, rgba(8, 10, 16, 0.96) 100%);
+  --grad-glow: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.18) 0%, transparent 70%);
+  --grad-animus-beam: linear-gradient(90deg, transparent 0%, rgba(0, 240, 255, 0.8) 50%, transparent 100%);
+  
+  /* Borders */
+  --border-light: rgba(212, 175, 55, 0.16);
+  --border-medium: rgba(212, 175, 55, 0.3);
+  --border-accent: rgba(212, 175, 55, 0.6);
+  --border-gold: rgba(212, 175, 55, 0.45);
+  --border-cyan: rgba(0, 240, 255, 0.4);
+  
+  /* Typography */
+  --font-display: 'Cinzel', serif;
+  --font-serif: 'Cinzel', serif;
+  --font-decorative: 'Cinzel Decorative', serif;
+  --font-classical: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'Space Grotesk', monospace, sans-serif;
+  
+  /* Spacing */
+  --container-max: 1440px;
+  --header-height: 84px;
+  --radius-sm: 4px; /* Sharper, chiseled edges */
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --transition-fast: 0.22s var(--ease-out-expo);
+  --transition-normal: 0.4s var(--ease-out-expo);
+  --transition-slow: 0.75s var(--ease-out-expo);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  selection-background-color: var(--accent-lime);
+  selection-color: #000;
+}
+
+::selection {
+  background-color: var(--accent-gold);
+  color: #06070a;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

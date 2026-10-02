@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" width="100%" height="100%">
+  <defs>
+    <radialGradient id="lumina-bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#14213d"/>
+      <stop offset="60%" stop-color="#050a14"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </radialGradient>
+    <linearGradient id="lumina-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ccff00"/>
+      <stop offset="50%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#7928ca"/>
+    </linearGradient>
+    <filter id="lum-blur">
+      <feGaussianBlur stdDeviation="35" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="720" height="1280" fill="url(#lumina-bg)"/>
+
+  <!-- Concentric Soundwaves -->
+  <g opacity="0.3" stroke="#00f0ff" stroke-width="1.5" fill="none">
+    <circle cx="360" cy="580" r="100"/>
+    <circle cx="360" cy="580" r="180"/>
+    <circle cx="360" cy="580" r="260"/>
+    <circle cx="360" cy="580" r="340"/>
+  </g>
+
+  <!-- Central Liquid Glass Orb -->
+  <g filter="url(#lum-blur)">
+    <circle cx="360" cy="580" r="140" fill="url(#lumina-glow)" opacity="0.4"/>
+    <!-- Organic distorted fluid blob -->
+    <path d="M360,460 C440,460 480,520 480,580 C480,660 420,700 360,700 C280,700 240,640 240,580 C240,500 300,460 360,460 Z" fill="#00f0ff" opacity="0.75"/>
+    <circle cx="360" cy="580" r="40" fill="#ccff00"/>
+  </g>
+
+  <!-- Top UI Overlay -->
+  <text x="50" y="90" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="14" letter-spacing="3">AURA SOUND LABS</text>
+  <text x="50" y="115" fill="#8892b0" font-family="'Space Grotesk', monospace" font-size="11" letter-spacing="1.5">REEL // SPATIAL AUDIO</text>
+
+  <!-- Title Bottom -->
+  <text x="50" y="1060" fill="#ffffff" font-family="'Syne', sans-serif" font-size="62" font-weight="900" letter-spacing="-1">LUMINA</text>
+  <text x="50" y="1100" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="16" letter-spacing="2">LIQUID LIGHT TEASER (00:30)</text>
+  <text x="50" y="1135" fill="#8892b0" font-family="'Plus Jakarta Sans', sans-serif" font-size="14">Sound pressure optics &amp; kinetic typography</text>
+
+  <!-- Play Trigger Icon -->
+  <g transform="translate(360, 580)">
+    <circle cx="0" cy="0" r="38" fill="rgba(7,7,9,0.7)" stroke="#ccff00" stroke-width="2"/>
+    <polygon points="-8,-12 14,0 -8,12" fill="#ccff00"/>
+  </g>
+</svg>

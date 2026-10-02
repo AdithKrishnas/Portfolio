@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ka-bg" cx="50%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#14070a"/>
+      <stop offset="60%" stop-color="#080304"/>
+      <stop offset="100%" stop-color="#020102"/>
+    </radialGradient>
+    <linearGradient id="ka-red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3366"/>
+      <stop offset="50%" stop-color="#ff0033"/>
+      <stop offset="100%" stop-color="#ff9900"/>
+    </linearGradient>
+    <filter id="k-glow">
+      <feGaussianBlur stdDeviation="20" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#ka-bg)"/>
+
+  <!-- Browser Window Chrome -->
+  <rect x="70" y="60" width="1060" height="680" rx="16" fill="#0d0406" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <rect x="70" y="60" width="1060" height="50" rx="16" fill="#140608"/>
+  <circle cx="105" cy="85" r="6" fill="#ff5f56"/>
+  <circle cx="125" cy="85" r="6" fill="#ffbd2e"/>
+  <circle cx="145" cy="85" r="6" fill="#27c93f"/>
+  <rect x="380" y="72" width="440" height="26" rx="13" fill="#220a0e"/>
+  <text x="600" y="89" text-anchor="middle" fill="#ffccd5" font-family="'Space Grotesk', monospace" font-size="12">https://keralaalert.in — Real-Time News &amp; Regional Alerts</text>
+
+  <!-- Content Preview -->
+  <g transform="translate(110, 140)">
+    <!-- Header alert banner -->
+    <rect x="0" y="0" width="980" height="42" rx="8" fill="rgba(255,0,51,0.18)" stroke="#ff0033" stroke-width="1"/>
+    <circle cx="24" cy="21" r="5" fill="#ff0033" filter="url(#k-glow)"/>
+    <text x="42" y="26" fill="#ffffff" font-family="'Space Grotesk', monospace" font-size="13" font-weight="bold">BREAKING ALERT // REAL-TIME SPEED</text>
+    <text x="800" y="26" fill="#ffccd5" font-family="'Space Grotesk', monospace" font-size="12">LIVE FEEDS • 24/7 REGIONAL RADAR</text>
+
+    <!-- Logo & Title -->
+    <g transform="translate(0, 75)">
+      <text x="0" y="35" fill="url(#ka-red)" font-family="'Syne', sans-serif" font-size="38" font-weight="900" letter-spacing="-1">KERALAALERT.IN</text>
+      <text x="320" y="30" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="12" font-weight="700">● VERIFIED PUBLICATION</text>
+      <text x="0" y="70" fill="#ffffff" font-family="'Syne', sans-serif" font-size="24" font-weight="800">TRUSTED INFORMATION ARCHITECTURE &amp; HIGH-TRAFFIC PORTAL</text>
+      <text x="0" y="98" fill="#9ea3b5" font-family="'Plus Jakarta Sans', sans-serif" font-size="15">Engineered, marketed and SEO-architected by AdithKrishna S.</text>
+    </g>
+
+    <!-- News Grid Cards -->
+    <g transform="translate(0, 210)">
+      <!-- Main Feature Card -->
+      <rect x="0" y="0" width="580" height="310" rx="12" fill="#170609" stroke="rgba(255,255,255,0.1)"/>
+      <rect x="20" y="20" width="540" height="150" rx="8" fill="#240a0f"/>
+      <!-- Map wireframe vector -->
+      <path d="M120,40 Q200,90 280,50 T460,110" fill="none" stroke="#ff3366" stroke-width="2"/>
+      <circle cx="280" cy="50" r="6" fill="#ccff00"/>
+      <text x="295" y="55" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="11" font-weight="bold">ALERT HUB</text>
+      <text x="24" y="210" fill="#ff3366" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">LIVE RADAR // WEATHER &amp; TRANSIT</text>
+      <text x="24" y="240" fill="#ffffff" font-family="'Syne', sans-serif" font-size="22" font-weight="bold">Real-time Emergency &amp; Public Information Gateway</text>
+      <text x="24" y="275" fill="#9ea3b5" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">High-concurrency infrastructure handling 50K+ daily readers</text>
+
+      <!-- Side Cards -->
+      <g transform="translate(610, 0)">
+        <rect x="0" y="0" width="370" height="145" rx="12" fill="#170609" stroke="rgba(255,255,255,0.1)"/>
+        <text x="24" y="35" fill="#ff9900" font-family="'Space Grotesk', monospace" font-size="11" font-weight="bold">SEO &amp; VIRAL TRAFFIC</text>
+        <text x="24" y="68" fill="#ffffff" font-family="'Syne', sans-serif" font-size="18" font-weight="bold">Automated Notification Bot</text>
+        <text x="24" y="95" fill="#9ea3b5" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Telegram &amp; WhatsApp instant push channel</text>
+        <text x="24" y="125" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">GROWTH: 85,000+ SUBSCRIBERS</text>
+      </g>
+
+      <g transform="translate(610, 165)">
+        <rect x="0" y="0" width="370" height="145" rx="12" fill="#170609" stroke="rgba(255,255,255,0.1)"/>
+        <text x="24" y="35" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="11" font-weight="bold">CONTENT DISTRIBUTION</text>
+        <text x="24" y="68" fill="#ffffff" font-family="'Syne', sans-serif" font-size="18" font-weight="bold">Regional Media Ecosystem</text>
+        <text x="24" y="95" fill="#9ea3b5" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Digital monetization, sponsored ads &amp; feeds</text>
+        <text x="24" y="125" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">VISIT KERALAALERT.IN ➔</text>
+      </g>
+    </g>
+  </g>
+</svg>

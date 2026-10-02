@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <rect width="1000" height="700" fill="#0b0b10"/>
+  <!-- Foil detail macro close up -->
+  <g transform="translate(500, 350)">
+    <circle cx="0" cy="0" r="220" fill="none" stroke="#ccff00" stroke-width="4"/>
+    <text x="0" y="20" text-anchor="middle" fill="#ffffff" font-family="'Syne', sans-serif" font-size="70" font-weight="900">PRINT DETAIL</text>
+  </g>
+  <text x="50" y="80" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="14" letter-spacing="3">FOIL STAMP &amp; SILKSCREEN CLOSEUP</text>
+  <text x="50" y="650" fill="#8890a6" font-family="'Space Grotesk', monospace" font-size="14">350GSM COTTON RAG • HIGH DISPLACEMENT</text>
+</svg>

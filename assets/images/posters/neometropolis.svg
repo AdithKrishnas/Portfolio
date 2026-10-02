@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="poster-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111116"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </linearGradient>
+    <linearGradient id="neon-slice" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ccff00"/>
+      <stop offset="100%" stop-color="#ff4365"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="700" height="1000" fill="url(#poster-grad)"/>
+
+  <!-- Brutalist Swiss Grid Lines -->
+  <g opacity="0.25" stroke="#ffffff" stroke-width="0.75">
+    <line x1="50" y1="0" x2="50" y2="1000"/>
+    <line x1="200" y1="0" x2="200" y2="1000"/>
+    <line x1="350" y1="0" x2="350" y2="1000"/>
+    <line x1="500" y1="0" x2="500" y2="1000"/>
+    <line x1="650" y1="0" x2="650" y2="1000"/>
+    <line x1="0" y1="180" x2="700" y2="180"/>
+    <line x1="0" y1="780" x2="700" y2="780"/>
+  </g>
+
+  <!-- Giant Roman Numeral / Typography -->
+  <text x="50" y="140" fill="#ffffff" font-family="'Syne', sans-serif" font-size="78" font-weight="900" letter-spacing="-2">NEO-METRO</text>
+  <text x="50" y="220" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="20" font-weight="700" letter-spacing="4">SOUND BIENNIAL // 2025</text>
+
+  <!-- Central Disrupted 3D Geometry Graphic -->
+  <g transform="translate(350, 480)">
+    <!-- Sphere grid mesh -->
+    <ellipse cx="0" cy="0" rx="180" ry="180" fill="#1b1c26" stroke="#ffffff" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="180" ry="70" fill="none" stroke="#ccff00" stroke-width="2"/>
+    <ellipse cx="0" cy="0" rx="70" ry="180" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+    <polygon points="0,-160 140,0 0,160 -140,0" fill="url(#neon-slice)" opacity="0.85"/>
+    <circle cx="0" cy="0" r="18" fill="#000000"/>
+    <circle cx="0" cy="0" r="6" fill="#ccff00"/>
+  </g>
+
+  <!-- Poster Lineup & Meta -->
+  <g font-family="'Space Grotesk', monospace" font-size="11" fill="#9ea3b5" letter-spacing="1">
+    <text x="50" y="810">KUNSTHALLE ZÜRICH</text>
+    <text x="50" y="830">OCTOBER 14 — 28</text>
+    <text x="50" y="850">TICKETS: BIENNIAL.CH</text>
+
+    <text x="350" y="810">DISSONANCE // AMBIENT</text>
+    <text x="350" y="830">MODULAR SYNTHESIS</text>
+    <text x="350" y="850">ACOUSTIC RESEARCH</text>
+
+    <text x="650" y="810" text-anchor="end" fill="#ffffff" font-weight="bold">EDITION: 1/500</text>
+    <text x="650" y="830" text-anchor="end">SWISS PRINT CRAFT</text>
+    <text x="650" y="850" text-anchor="end" fill="#ccff00">SILKSCREEN + FOIL</text>
+  </g>
+
+  <!-- Big Decorative Bottom Glyph -->
+  <text x="50" y="950" fill="#ffffff" font-family="'Syne', sans-serif" font-size="64" font-weight="900" opacity="0.9">Nº 09</text>
+  <rect x="520" y="910" width="130" height="40" fill="#ccff00"/>
+  <text x="585" y="936" text-anchor="middle" fill="#000000" font-family="'Space Grotesk', monospace" font-weight="bold" font-size="14">EXHIBITION</text>
+</svg>

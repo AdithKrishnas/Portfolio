@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="strata-bg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#0e172a"/>
+      <stop offset="60%" stop-color="#060913"/>
+      <stop offset="100%" stop-color="#020306"/>
+    </radialGradient>
+    <linearGradient id="strata-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="strata-blur">
+      <feGaussianBlur stdDeviation="20" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#strata-bg)"/>
+
+  <!-- Browser / OS Window Chrome -->
+  <rect x="80" y="80" width="1040" height="640" rx="16" fill="#0d111e" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  
+  <!-- Window titlebar -->
+  <rect x="80" y="80" width="1040" height="50" rx="16" fill="#131728"/>
+  <circle cx="115" cy="105" r="6" fill="#ff5f56"/>
+  <circle cx="135" cy="105" r="6" fill="#ffbd2e"/>
+  <circle cx="155" cy="105" r="6" fill="#27c93f"/>
+  <rect x="420" y="92" width="360" height="26" rx="13" fill="#1a2035"/>
+  <text x="600" y="109" text-anchor="middle" fill="#8892b0" font-family="'Space Grotesk', monospace" font-size="11">strata-os.network/spatial</text>
+
+  <!-- Spatial OS Dashboard Content -->
+  <!-- Left Sidebar -->
+  <rect x="80" y="130" width="80" height="590" fill="#0f1424" stroke-right="rgba(255,255,255,0.06)"/>
+  <circle cx="120" cy="170" r="16" fill="#00f0ff"/>
+  <rect x="105" y="220" width="30" height="6" rx="3" fill="#3b82f6"/>
+  <rect x="105" y="250" width="30" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+  <rect x="105" y="280" width="30" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+
+  <!-- Main Spatial Viewport with floating cards -->
+  <g transform="translate(180, 150)">
+    <!-- Spatial Canvas 3D Node Mesh -->
+    <circle cx="450" cy="260" r="160" fill="none" stroke="url(#strata-cyan)" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.4"/>
+    <circle cx="450" cy="260" r="90" fill="#00f0ff" opacity="0.15" filter="url(#strata-blur)"/>
+
+    <!-- Floating Glass Window 1 -->
+    <rect x="40" y="40" width="320" height="220" rx="12" fill="rgba(22, 29, 49, 0.7)" stroke="#00f0ff" stroke-width="1.5"/>
+    <text x="65" y="80" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">SPATIAL TELEMETRY</text>
+    <text x="65" y="125" fill="#ffffff" font-family="'Syne', sans-serif" font-size="34" font-weight="900">120 FPS</text>
+    <text x="65" y="155" fill="#8892b0" font-family="'Space Grotesk', monospace" font-size="12">LATENCY: 4.2MS • ZERO DRIFT</text>
+    <!-- mini graph -->
+    <path d="M65,220 L120,190 L180,210 L240,170 L300,195" fill="none" stroke="#ccff00" stroke-width="2.5"/>
+
+    <!-- Floating Glass Window 2 -->
+    <rect x="480" y="180" width="400" height="280" rx="12" fill="rgba(26, 34, 58, 0.8)" stroke="rgba(255,255,255,0.15)"/>
+    <text x="510" y="225" fill="#ffffff" font-family="'Syne', sans-serif" font-size="22" font-weight="800">NEURAL CO-PROCESSOR</text>
+    <text x="510" y="255" fill="#8892b0" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">Active spatial eye-tracking &amp; haptic feedback</text>
+    <!-- Sliders -->
+    <rect x="510" y="290" width="340" height="8" rx="4" fill="#0f1424"/>
+    <rect x="510" y="290" width="240" height="8" rx="4" fill="url(#strata-cyan)"/>
+    <rect x="510" y="330" width="340" height="8" rx="4" fill="#0f1424"/>
+    <rect x="510" y="330" width="180" height="8" rx="4" fill="#ccff00"/>
+    <text x="510" y="380" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">STATUS: RUNNING AT OPTIMAL EFFICIENCY</text>
+  </g>
+</svg>

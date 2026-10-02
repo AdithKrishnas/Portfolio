@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="verve-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191512"/>
+      <stop offset="100%" stop-color="#0a0807"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#verve-grad)"/>
+
+  <!-- High-end luxury fashion brochure cover -->
+  <rect x="60" y="60" width="680" height="880" fill="#14110e" stroke="rgba(255,255,255,0.08)"/>
+
+  <g transform="translate(400, 420)">
+    <!-- Elegant fashion silhouette / abstract geometric motif -->
+    <ellipse cx="0" cy="-60" rx="90" ry="130" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <ellipse cx="0" cy="80" rx="140" ry="200" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="8 6"/>
+    <line x1="0" y1="-220" x2="0" y2="300" stroke="#d4af37" stroke-width="0.8"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="120" y="150" fill="#d4af37" font-family="'Space Grotesk', monospace" font-size="14" letter-spacing="6">MILAN ATELIER // AW25</text>
+  <text x="120" y="240" fill="#ffffff" font-family="'Syne', sans-serif" font-size="68" font-weight="900" letter-spacing="-1">VERVE</text>
+  <text x="120" y="280" fill="#9ea3b5" font-family="'Plus Jakarta Sans', sans-serif" font-size="16">HAUTE COUTURE CATALOGUE</text>
+
+  <!-- Footer Foil Specs -->
+  <text x="120" y="860" fill="#d4af37" font-family="'Space Grotesk', monospace" font-size="12" letter-spacing="2">COPPER FOIL ON TRANSLUCENT VELLUM</text>
+  <text x="120" y="890" fill="#5e6478" font-family="'Space Grotesk', monospace" font-size="11">FRENCH-FOLD BINDING // 64 PAGES</text>
+</svg>

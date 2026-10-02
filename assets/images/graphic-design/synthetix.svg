@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="synth-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111317"/>
+      <stop offset="100%" stop-color="#07080a"/>
+    </linearGradient>
+    <linearGradient id="synth-holo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ccff00"/>
+      <stop offset="50%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="1200" fill="url(#synth-bg)"/>
+
+  <!-- Precision Technical Blueprint Lines -->
+  <g opacity="0.2" stroke="#ffffff" stroke-width="0.8">
+    <line x1="100" y1="0" x2="100" y2="1200"/>
+    <line x1="900" y1="0" x2="900" y2="1200"/>
+    <line x1="0" y1="200" x2="1000" y2="200"/>
+    <line x1="0" y1="1000" x2="1000" y2="1000"/>
+    <circle cx="500" cy="550" r="320" fill="none" stroke-dasharray="10 8"/>
+  </g>
+
+  <!-- Bio-Mechanic Generative Logomark -->
+  <g transform="translate(500, 550)">
+    <!-- Rotating geometric polygon petals -->
+    <path d="M0,-200 C80,-200 160,-120 160,0 C160,120 80,200 0,200 C-80,200 -160,120 -160,0 C-160,-120 -80,-200 0,-200 Z" fill="none" stroke="url(#synth-holo)" stroke-width="3"/>
+    
+    <path d="M-140,-140 C-40,-180 80,-140 140,-40 C200,60 140,160 40,180 C-60,200 -160,140 -180,40 C-200,-60 -140,-140 -140,-140 Z" fill="none" stroke="#ccff00" stroke-width="2" opacity="0.6"/>
+
+    <!-- Central synthetic nucleus -->
+    <circle cx="0" cy="0" r="50" fill="#161820" stroke="#00f0ff" stroke-width="2"/>
+    <circle cx="0" cy="0" r="16" fill="#ccff00"/>
+    
+    <line x1="-240" y1="0" x2="240" y2="0" stroke="#ccff00" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <line x1="0" y1="-240" x2="0" y2="240" stroke="#ccff00" stroke-width="1.5" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="100" y="140" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="14" letter-spacing="4">AUTONOMOUS BIO-ROBOTICS</text>
+  <text x="100" y="180" fill="#8890a6" font-family="'Space Grotesk', monospace" font-size="12">IDENTITY SYSTEM // REF 098</text>
+
+  <text x="100" y="1060" fill="#ffffff" font-family="'Syne', sans-serif" font-size="72" font-weight="900" letter-spacing="-2">SYNTHETIX</text>
+  <text x="100" y="1100" fill="#8890a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="16">Generative brand architecture &amp; sustainable packaging</text>
+</svg>

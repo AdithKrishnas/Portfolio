@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <rect width="1000" height="700" fill="#080b12"/>
+  <text x="60" y="80" fill="#ccff00" font-family="'Space Grotesk', monospace" font-size="14">DESIGN SYSTEM // COMPONENT TOKENS</text>
+  <rect x="60" y="120" width="180" height="80" rx="8" fill="#141a2e" stroke="#00f0ff"/>
+  <rect x="260" y="120" width="180" height="80" rx="8" fill="#141a2e" stroke="#ccff00"/>
+  <rect x="460" y="120" width="180" height="80" rx="8" fill="#141a2e" stroke="#ff4365"/>
+  <text x="80" y="165" fill="#ffffff" font-family="'Space Grotesk', monospace">PRIMARY</text>
+  <text x="280" y="165" fill="#ffffff" font-family="'Space Grotesk', monospace">ACCENT</text>
+  <text x="480" y="165" fill="#ffffff" font-family="'Space Grotesk', monospace">DANGER</text>
+  <!-- Wireframe layout tree -->
+  <rect x="60" y="240" width="880" height="380" rx="10" fill="#0c101c" stroke="rgba(255,255,255,0.1)"/>
+  <line x1="60" y1="340" x2="940" y2="340" stroke="rgba(255,255,255,0.06)"/>
+  <line x1="360" y1="240" x2="360" y2="620" stroke="rgba(255,255,255,0.06)"/>
+  <text x="90" y="280" fill="#8892b0" font-family="'Space Grotesk', monospace">Figma Variables • Tokens • Auto-Layout</text>
+</svg>

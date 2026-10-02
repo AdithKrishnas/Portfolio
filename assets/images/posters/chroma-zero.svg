@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="chroma-bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#190e2b"/>
+      <stop offset="60%" stop-color="#090510"/>
+      <stop offset="100%" stop-color="#020104"/>
+    </radialGradient>
+    <linearGradient id="foil-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="35%" stop-color="#ccff00"/>
+      <stop offset="70%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#7928ca"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="700" height="1000" fill="url(#chroma-bg)"/>
+
+  <!-- Optical Wave Lines -->
+  <g opacity="0.35" stroke="url(#foil-grad)" stroke-width="1.5" fill="none">
+    <circle cx="350" cy="500" r="80"/>
+    <circle cx="350" cy="500" r="140"/>
+    <circle cx="350" cy="500" r="200"/>
+    <circle cx="350" cy="500" r="260"/>
+    <circle cx="350" cy="500" r="320"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="60" y="130" fill="#ffffff" font-family="'Syne', sans-serif" font-size="70" font-weight="900">CHROMA</text>
+  <text x="60" y="200" fill="url(#foil-grad)" font-family="'Syne', sans-serif" font-size="70" font-weight="900">ZERO</text>
+
+  <!-- Center Artwork Element -->
+  <g transform="translate(350, 500)">
+    <circle cx="0" cy="0" r="110" fill="#090510" stroke="url(#foil-grad)" stroke-width="4"/>
+    <polygon points="-60,-60 60,-60 60,60 -60,60" fill="none" stroke="#ffffff" stroke-width="2" transform="rotate(45)"/>
+    <circle cx="0" cy="0" r="15" fill="#ccff00"/>
+  </g>
+
+  <!-- Metadata -->
+  <text x="60" y="850" fill="#ffffff" font-family="'Space Grotesk', monospace" font-size="14" letter-spacing="3">TOKYO GRAPHIC ARTS MUSEUM</text>
+  <text x="60" y="880" fill="#8890a6" font-family="'Space Grotesk', monospace" font-size="12">LIMITED RUN OF 1,200 SILKSCREEN PRINTS</text>
+  <text x="60" y="930" fill="#00f0ff" font-family="'Space Grotesk', monospace" font-size="22" font-weight="700">2026 EXHIBITION</text>
+</svg>
