@@ -90,6 +90,20 @@
   }
 }
 
+/* Mobile & Tablet Performance Optimizations */
+@media (max-width: 768px), (pointer: coarse) {
+  .tilt-card {
+    transform: none !important;
+    perspective: none !important;
+  }
+  .magnetic-target {
+    transform: none !important;
+  }
+  [data-reveal] {
+    transition-duration: 0.5s;
+  }
+}
+
 /* Reduced Motion Safety */
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] {

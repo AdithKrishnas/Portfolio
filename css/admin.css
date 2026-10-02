@@ -372,16 +372,69 @@
   box-shadow: 0 12px 30px rgba(204, 255, 0, 0.35);
 }
 
+@media (max-width: 900px) {
+  .admin-music-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+
 @media (max-width: 768px) {
+  .admin-window {
+    width: 96vw;
+    max-height: 94vh;
+    padding: 1.25rem;
+    border-radius: var(--radius-sm);
+  }
+  .admin-top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .admin-tabs-nav {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.4rem;
+    padding-bottom: 0.5rem;
+  }
+  .admin-tabs-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .admin-tab-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.78rem;
+  }
   .admin-form-grid {
     grid-template-columns: 1fr;
   }
   .admin-project-row {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
+  }
+  .admin-row-thumb {
+    width: 100%;
+    height: 130px;
   }
   .admin-row-actions {
     width: 100%;
     justify-content: flex-end;
+  }
+  .admin-music-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .pin-input-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .admin-lock-screen {
+    padding: 2rem 1rem;
+  }
+  .admin-lock-title {
+    font-size: 1.4rem;
   }
 }

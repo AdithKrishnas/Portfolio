@@ -711,89 +711,149 @@
 @media (max-width: 1024px) {
   .hero-computer-container {
     max-width: 100%;
-    margin: 2.5rem auto 0;
+    margin: 2rem auto 0;
+    overflow: hidden;
+  }
+  .suite-portals-nav {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.85rem;
+  }
+  .suite-portal-btn {
+    padding: 1.1rem;
   }
   .suite-projects-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
   .platforms-grid {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero-computer-container {
-    margin: 2rem auto 0;
+    margin: 1.5rem auto 0;
+    perspective: none;
+    overflow: hidden;
+  }
+  .hero-computer-wrap {
+    transform: none !important;
   }
   .hero-scroll-indicator {
     font-size: 0.72rem;
+    margin-top: 1rem;
+  }
+  .scroll-mouse-icon {
+    width: 18px;
+    height: 30px;
   }
   .timeline-section {
-    padding: 5rem 0;
+    padding: 4.5rem 0;
   }
   .timeline-track {
-    padding-left: 0.5rem;
-    gap: 2.25rem;
-    margin-top: 2rem;
+    padding-left: 0.25rem;
+    gap: 1.75rem;
+    margin-top: 1.5rem;
   }
   .timeline-track::before {
-    left: calc(0.5rem + 12px);
+    left: calc(0.25rem + 12px);
   }
   .timeline-node {
-    gap: 1.25rem;
+    gap: 1rem;
   }
   .timeline-node-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   .timeline-card-title {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
   .timeline-card-footer {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.85rem;
+    gap: 0.75rem;
   }
+
+  /* Design Suite Portals Touch Swipe on Mobile */
   .suite-section {
-    padding: 5rem 0;
+    padding: 4.5rem 0;
   }
   .suite-portals-nav {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.65rem;
+    padding-bottom: 0.75rem;
+    scrollbar-width: none;
+    margin-bottom: 2rem;
+  }
+  .suite-portals-nav::-webkit-scrollbar {
+    display: none;
   }
   .suite-portal-btn {
-    padding: 1.25rem;
+    flex: 0 0 auto;
+    min-width: 190px;
+    padding: 0.85rem 1rem;
+    gap: 0.75rem;
+  }
+  .suite-portal-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .suite-portal-title {
+    font-size: 0.85rem;
+  }
+  .suite-portal-count {
+    font-size: 0.68rem;
   }
   .suite-projects-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+
+  /* AI Video Dimension */
   .ai-world-section {
-    padding: 5rem 0;
+    padding: 4.5rem 0;
   }
   .ai-world-grid {
     grid-template-columns: 1fr;
-    gap: 1.75rem;
+    gap: 1.5rem;
   }
   .ai-video-card {
     aspect-ratio: 9 / 13;
   }
+
+  /* Sovereign Platforms */
   .platforms-section {
-    padding: 5rem 0;
+    padding: 4.5rem 0;
   }
   .platforms-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
   .platform-body {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   .platform-name {
     font-size: 1.35rem;
   }
   .platform-metrics-list {
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 1rem;
+  }
+  .platform-metric-item .metric-num {
+    font-size: 1.4rem;
+  }
+  .platform-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .platform-actions .btn-primary,
+  .platform-actions .btn-secondary {
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -802,14 +862,14 @@
     padding-left: 0;
   }
   .timeline-track::before {
-    left: 12px;
+    left: 11px;
   }
   .timeline-node {
-    gap: 0.85rem;
+    gap: 0.75rem;
   }
   .timeline-node-marker {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     margin-top: 0.35rem;
   }
   .timeline-beacon {
@@ -817,21 +877,20 @@
     height: 6px;
   }
   .timeline-node-card {
-    padding: 1.15rem;
+    padding: 1.1rem;
   }
   .timeline-card-title {
-    font-size: 1.18rem;
+    font-size: 1.15rem;
   }
   .timeline-card-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
   }
-  .platform-actions {
-    flex-direction: column;
-    align-items: stretch;
+  .timeline-card-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
-  .platform-actions .btn-primary,
-  .platform-actions .btn-secondary {
-    text-align: center;
-    justify-content: center;
+  .timeline-metric-pill {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.65rem;
   }
 }

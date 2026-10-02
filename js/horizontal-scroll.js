@@ -94,6 +94,25 @@ class HorizontalShowcase {
       this.updateProgress();
     });
 
+    // Touch Drag Interaction for Mobile & Tablet
+    this.container.addEventListener("touchstart", (e) => {
+      this.isDown = true;
+      this.startX = e.touches[0].pageX - this.container.offsetLeft;
+      this.scrollLeft = this.container.scrollLeft;
+    }, { passive: true });
+
+    window.addEventListener("touchend", () => {
+      this.isDown = false;
+    }, { passive: true });
+
+    this.container.addEventListener("touchmove", (e) => {
+      if (!this.isDown) return;
+      const x = e.touches[0].pageX - this.container.offsetLeft;
+      const walk = (x - this.startX) * 1.4;
+      this.container.scrollLeft = this.scrollLeft - walk;
+      this.updateProgress();
+    }, { passive: true });
+
     // Scroll progress update
     this.container.addEventListener("scroll", () => {
       this.updateProgress();

@@ -99,6 +99,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -110,6 +111,11 @@ body {
   overflow-x: hidden;
   selection-background-color: var(--accent-lime);
   selection-color: #000;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a, input, select, textarea {
+  touch-action: manipulation;
 }
 
 ::selection {
